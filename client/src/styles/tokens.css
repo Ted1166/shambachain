@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap');
+
+:root {
+  /* ── Palette ── */
+  --bg-void:      #050905;
+  --bg-base:      #090f09;
+  --bg-surface:   #0e180e;
+  --bg-elevated:  #132013;
+  --bg-hover:     #1a2e1a;
+
+  --green-bright: #00ff88;
+  --green-mid:    #00cc6a;
+  --green-dim:    #00994f;
+  --green-mute:   #1a3d2a;
+  --green-glow:   rgba(0, 255, 136, 0.12);
+  --green-glow-strong: rgba(0, 255, 136, 0.25);
+
+  --amber:        #ffaa00;
+  --amber-dim:    #cc8800;
+  --red:          #ff4444;
+  --red-dim:      #cc2222;
+  --blue:         #44aaff;
+
+  --text-primary:   #e8f5e8;
+  --text-secondary: #7aaa7a;
+  --text-muted:     #3d663d;
+  --text-dim:       #254025;
+
+  --border:       rgba(0, 255, 136, 0.12);
+  --border-mid:   rgba(0, 255, 136, 0.25);
+  --border-bright:rgba(0, 255, 136, 0.5);
+
+  /* ── Typography ── */
+  --font-display: 'Syne', sans-serif;
+  --font-mono:    'Space Mono', monospace;
+
+  /* ── Spacing ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ── Radius ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+
+  /* ── Shadows ── */
+  --shadow-green: 0 0 20px rgba(0,255,136,0.15), 0 0 60px rgba(0,255,136,0.05);
+  --shadow-green-strong: 0 0 30px rgba(0,255,136,0.3), 0 0 80px rgba(0,255,136,0.1);
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.4);
+
+  /* ── Transitions ── */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration: 200ms;
+}

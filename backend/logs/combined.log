@@ -1,0 +1,1386 @@
+2026-03-11 08:23:23 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 08:23:23 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-11 08:23:23 [[32minfo[39m] Telegram bot initialised
+2026-03-11 08:23:23 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:23:23 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:23:23 [[32minfo[39m] RiskAgent: subscribed to LoanLiquidated events
+2026-03-11 08:23:23 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 08:23:23 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 08:23:23 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 08:23:24 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:24 [[33mwarn[39m] RiskAgent: could not discover tokens {"err":{"code":"CALL_EXCEPTION","action":"call","data":"0x","reason":"require(false)","transaction":{"to":"0x451f2f54A027F9Ec359f1411f341878d645dD337","data":"0x18160ddd"},"invocation":{"method":"totalSupply","signature":"totalSupply()","args":[]},"revert":null,"shortMessage":"execution reverted (no data present; likely require(false) occurred"}}
+2026-03-11 08:23:24 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:24 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-11 08:23:24 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-11 08:23:25 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:25 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:26 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:26 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:27 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:27 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:29 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:29 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:50 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:50 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:51 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:51 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:52 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:52 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:54 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:54 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:55 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:55 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:56 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:56 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:57 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:23:57 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:14 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 08:27:14 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-11 08:27:14 [[32minfo[39m] Telegram bot initialised
+2026-03-11 08:27:14 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:27:14 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:27:14 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-11 08:27:14 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 08:27:14 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 08:27:14 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 08:27:15 [[33mwarn[39m] RiskAgent: mirror node discovery failed, using fallback scan {"err":{"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (/home/adams/hack/shambachain/backend/node_modules/axios/lib/core/settle.js:20:7)\n    at IncomingMessage.handleStreamEnd (/home/adams/hack/shambachain/backend/node_modules/axios/lib/adapters/http.js:844:13)\n    at IncomingMessage.emit (node:events:520:35)\n    at endReadableNT (node:internal/streams/readable:1701:12)\n    at processTicksAndRejections (node:internal/process/task_queues:89:21)\n    at Axios.request (/home/adams/hack/shambachain/backend/node_modules/axios/lib/core/Axios.js:46:41)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at RiskAgent.discoverActiveTokens (/home/adams/hack/shambachain/backend/src/agents/RiskAgent.ts:270:19)\n    at RiskAgent.runRiskScan (/home/adams/hack/shambachain/backend/src/agents/RiskAgent.ts:86:7)","config":{"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false,"legacyInterceptorReqResOrdering":true},"adapter":["xhr","http","fetch"],"transformRequest":[null],"transformResponse":[null],"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"env":{},"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/1.13.6","Accept-Encoding":"gzip, compress, deflate, br"},"method":"get","url":"https://testnet.mirrornode.hedera.com/api/v1/tokens/0x451f2f54A027F9Ec359f1411f341878d645dD337/nfts?limit=100&order=asc","allowAbsoluteUrls":true},"code":"ERR_BAD_REQUEST","status":400}}
+2026-03-11 08:27:15 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:15 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 08:27:15 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-11 08:27:15 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:16 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:16 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:17 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:17 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:18 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:18 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:19 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:19 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:20 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:20 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:21 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:21 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:22 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:22 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:23 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:23 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:24 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-11 08:27:24 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:24 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:25 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:25 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:26 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 08:27:26 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:26 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:27 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:27 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:29 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:29 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"CALL_EXCEPTION","action":"sendTransaction","data":null,"reason":null,"invocation":null,"revert":null,"transaction":{"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","data":""},"receipt":{"_type":"TransactionReceipt","blockHash":"0xd100a71930b4d2b9f896d490401d6762847901afa27b047d713cff273e7ce8d6","blockNumber":32579592,"contractAddress":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","cumulativeGasUsed":"272319","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","gasPrice":"900000000000","blobGasUsed":null,"blobGasPrice":null,"gasUsed":"100000","hash":"0x0e92615390b402dbe1b3cc50d4102dcc0e8e464bbe39a343e85dd549e7e6492c","index":23,"logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421","status":0,"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785"},"shortMessage":"transaction execution reverted"}}
+2026-03-11 08:27:29 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:37 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 08:27:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:50 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:50 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:51 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:51 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:52 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:52 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:54 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:54 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:55 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:55 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:56 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:56 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:57 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:57 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:58 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:58 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:27:59 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}}
+2026-03-11 08:31:43 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 08:31:43 [[32minfo[39m] Telegram bot skipped (token not configured)
+2026-03-11 08:31:43 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:31:43 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:31:43 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-11 08:31:43 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 08:31:43 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 08:31:43 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 08:31:43 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":8,"tokenIds":[7.19989143318017e+76,1,2,3,2.6694467917359527e+47,4,5,6]}
+2026-03-11 08:31:43 [[33mwarn[39m] RiskAgent: valuation update failed {"err":{"code":"INVALID_ARGUMENT","argument":"value","value":7.19989143318017e+76,"shortMessage":"overflow"}}
+2026-03-11 08:31:43 [[33mwarn[39m] RiskAgent: error checking tokenId 7.19989143318017e+76 {"err":{"code":"INVALID_ARGUMENT","argument":"value","value":7.19989143318017e+76,"shortMessage":"overflow"}}
+2026-03-11 08:31:44 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 08:31:44 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-11 08:31:44 [[33mwarn[39m] RiskAgent: error checking tokenId 2.6694467917359527e+47 {"err":{"code":"INVALID_ARGUMENT","argument":"value","value":2.6694467917359527e+47,"shortMessage":"overflow"}}
+2026-03-11 08:31:45 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 08:31:55 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"CALL_EXCEPTION","action":"sendTransaction","data":null,"reason":null,"invocation":null,"revert":null,"transaction":{"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","data":""},"receipt":{"_type":"TransactionReceipt","blockHash":"0x158ace426e75570a31e22fe1142bfa8b9954a0bf1fc148c3be574b20870dafb4","blockNumber":32579726,"contractAddress":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","cumulativeGasUsed":"100000","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","gasPrice":"900000000000","blobGasUsed":null,"blobGasPrice":null,"gasUsed":"100000","hash":"0x130b68c4713da914965d5d24bdd4ea57c4eb23d4e2bd1237b8eff7571008f258","index":6,"logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421","status":0,"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785"},"shortMessage":"transaction execution reverted"}}
+2026-03-11 08:31:55 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 08:32:05 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 08:32:05 [[32minfo[39m] Telegram bot skipped (token not configured)
+2026-03-11 08:32:05 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:32:05 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:32:05 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-11 08:32:05 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 08:32:05 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 08:32:05 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 08:32:06 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":8,"tokenIds":[7.19989143318017e+76,1,2,3,2.6694467917359527e+47,4,5,6]}
+2026-03-11 08:32:06 [[33mwarn[39m] RiskAgent: valuation update failed {"err":{"code":"INVALID_ARGUMENT","argument":"value","value":7.19989143318017e+76,"shortMessage":"overflow"}}
+2026-03-11 08:32:06 [[33mwarn[39m] RiskAgent: error checking tokenId 7.19989143318017e+76 {"err":{"code":"INVALID_ARGUMENT","argument":"value","value":7.19989143318017e+76,"shortMessage":"overflow"}}
+2026-03-11 08:32:06 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 08:32:06 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-11 08:32:07 [[33mwarn[39m] RiskAgent: error checking tokenId 2.6694467917359527e+47 {"err":{"code":"INVALID_ARGUMENT","argument":"value","value":2.6694467917359527e+47,"shortMessage":"overflow"}}
+2026-03-11 08:32:08 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 08:32:19 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"CALL_EXCEPTION","action":"sendTransaction","data":null,"reason":null,"invocation":null,"revert":null,"transaction":{"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","data":""},"receipt":{"_type":"TransactionReceipt","blockHash":"0x4eb3451b1024af86c86a077f5ee466f658ec9e99de37ad29d59f19c995df00af","blockNumber":32579737,"contractAddress":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","cumulativeGasUsed":"100000","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","gasPrice":"900000000000","blobGasUsed":null,"blobGasPrice":null,"gasUsed":"100000","hash":"0x7e6db61496928c0a47024bb23009242f629472089d74e36e5f6787bd19683076","index":17,"logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421","status":0,"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785"},"shortMessage":"transaction execution reverted"}}
+2026-03-11 08:32:19 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 08:35:05 [[31merror[39m] PriceAgent tick error {"err":{"code":"TIMEOUT","shortMessage":"request timeout"}}
+2026-03-11 08:38:14 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 08:38:14 [[32minfo[39m] Telegram bot skipped (token not configured)
+2026-03-11 08:38:14 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:38:14 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:38:14 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-11 08:38:14 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 08:38:14 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 08:38:14 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 08:38:15 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:38:15 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 08:38:15 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-11 08:38:23 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:38:25 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 08:38:28 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"CALL_EXCEPTION","action":"sendTransaction","data":null,"reason":null,"invocation":null,"revert":null,"transaction":{"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","data":""},"receipt":{"_type":"TransactionReceipt","blockHash":"0xfe72af79b487072f174e01ce52cf7b273ea2fc23a3dc916924061207cf1dcb44","blockNumber":32579922,"contractAddress":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","cumulativeGasUsed":"100000","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","gasPrice":"900000000000","blobGasUsed":null,"blobGasPrice":null,"gasUsed":"100000","hash":"0xde2db74622a2464ee61798ce44500988e3d6bd13d876a9a9a042ce8982833cc0","index":29,"logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421","status":0,"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785"},"shortMessage":"transaction execution reverted"}}
+2026-03-11 08:38:32 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 08:39:14 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 08:39:15 [[32minfo[39m] Telegram bot skipped (token not configured)
+2026-03-11 08:39:15 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:39:15 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:39:15 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-11 08:39:15 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 08:39:15 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 08:39:15 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 08:39:15 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:39:15 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 08:39:15 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-11 08:39:24 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:39:26 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 08:39:29 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"CALL_EXCEPTION","action":"sendTransaction","data":null,"reason":null,"invocation":null,"revert":null,"transaction":{"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","data":""},"receipt":{"_type":"TransactionReceipt","blockHash":"0xd63d92544546c270b39197841c112867748d2ccc9f1819ad29a7247fce24451a","blockNumber":32579952,"contractAddress":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","cumulativeGasUsed":"100000","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","gasPrice":"900000000000","blobGasUsed":null,"blobGasPrice":null,"gasUsed":"100000","hash":"0x32bff14d95f1fe37b4af0eec9853256b995b0362335038e7c2a8685cc8f14b12","index":10,"logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421","status":0,"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785"},"shortMessage":"transaction execution reverted"}}
+2026-03-11 08:39:34 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 08:40:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-11 08:40:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 08:40:06 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:40:08 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 08:40:18 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 08:51:17 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 08:51:17 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-11 08:51:17 [[32minfo[39m] Telegram bot initialised
+2026-03-11 08:51:17 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:51:17 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:51:17 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-11 08:51:17 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 08:51:17 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 08:51:17 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 08:51:18 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:51:18 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:18 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 08:51:18 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-11 08:51:18 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:19 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:19 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:20 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:20 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:21 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:21 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:22 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:22 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:23 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:23 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:24 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:24 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:25 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:25 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:26 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:26 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:51:26 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:27 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:27 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:28 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 08:51:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:29 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:29 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:30 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"CALL_EXCEPTION","action":"sendTransaction","data":null,"reason":null,"invocation":null,"revert":null,"transaction":{"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","data":""},"receipt":{"_type":"TransactionReceipt","blockHash":"0x435a078cf8ca3503d82a98b64090f36cd0164b9e04e8c93a93af34898d67667f","blockNumber":32580314,"contractAddress":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","cumulativeGasUsed":"0","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","gasPrice":"900000000000","blobGasUsed":null,"blobGasPrice":null,"gasUsed":"0","hash":"0x43550b4f7e8b9e6d74a0d3a8e6fe554c893c8c6cc0d044b344602a1a39090d36","index":5,"logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421","status":0,"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785"},"shortMessage":"transaction execution reverted"}}
+2026-03-11 08:51:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:37 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 08:51:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:50 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:50 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:51 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:51 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:52 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:52 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:54 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:54 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:55 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:55 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:56 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:56 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:57 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:57 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:58 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:58 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:59 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:51:59 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:00 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:00 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:01 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:01 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:02 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:02 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:03 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:03 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:04 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:04 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:05 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:05 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:06 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:06 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:07 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:07 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:08 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:08 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:09 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:10 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:10 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:11 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:10 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:11 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:12 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:12 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:12 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:13 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:13 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:14 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:14 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:15 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:15 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:16 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:16 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:17 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:17 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:18 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:18 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:19 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:19 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:20 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:20 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:21 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:21 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:22 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:22 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:23 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:23 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:24 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:24 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:25 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:26 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:26 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:27 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:27 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:29 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:29 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:50 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:50 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:51 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:51 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:52 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:52 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:54 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:55 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:55 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:56 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:57 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:57 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:58 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:58 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:52:59 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:00 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:00 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:01 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:02 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:03 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:03 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:04 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:05 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:05 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:06 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:06 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:07 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:07 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:08 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:08 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:09 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:09 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:10 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:10 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:11 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:11 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:12 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:12 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:13 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:13 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:14 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:14 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:14 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:14 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:15 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:15 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:16 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:16 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:17 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:17 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:18 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:18 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:19 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:19 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:20 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:20 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:21 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:21 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:22 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:22 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:23 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:24 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:24 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:25 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:25 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:26 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:26 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:27 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:27 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:29 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:29 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:30 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:31 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:53:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:30 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 08:56:30 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-11 08:56:30 [[32minfo[39m] Telegram bot initialised
+2026-03-11 08:56:30 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:56:30 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:56:30 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-11 08:56:30 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 08:56:30 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 08:56:30 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 08:56:30 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:56:31 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 08:56:31 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-11 08:56:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:32 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:33 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:34 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:35 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:36 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:37 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:38 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:39 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:40 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:40 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:56:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:41 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:42 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:42 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 08:56:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:43 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:44 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:45 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"CALL_EXCEPTION","action":"sendTransaction","data":null,"reason":null,"invocation":null,"revert":null,"transaction":{"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","data":""},"receipt":{"_type":"TransactionReceipt","blockHash":"0x6639cd49fc068909df2be8bfc36debbc0e74d027b03ada978a119274cbc11e89","blockNumber":32580470,"contractAddress":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","cumulativeGasUsed":"0","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","gasPrice":"900000000000","blobGasUsed":null,"blobGasPrice":null,"gasUsed":"0","hash":"0xa91e8dcd01a51c45847ee1a55cf141e44ef0f6e999b4498d2dbe33e8121cf8cf","index":23,"logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421","status":0,"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785"},"shortMessage":"transaction execution reverted"}}
+2026-03-11 08:56:45 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:46 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:47 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:48 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:49 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:50 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:50 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:51 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:52 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:52 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 08:56:52 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:54 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:53 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:54 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:54 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:55 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:55 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:56 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:56 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:57 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:57 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:58 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:58 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:56:59 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:57:00 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 401 Unauthorized"}}
+2026-03-11 08:58:16 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 08:58:16 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-11 08:58:16 [[32minfo[39m] Telegram bot initialised
+2026-03-11 08:58:16 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:58:16 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 08:58:16 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-11 08:58:16 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 08:58:16 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 08:58:16 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 08:58:16 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-11 08:58:16 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:58:17 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-11 08:58:17 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 08:58:17 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-11 08:58:25 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 08:58:27 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 08:58:28 [[31merror[39m] Telegram polling error {"err":{"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}}
+2026-03-11 08:58:29 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"CALL_EXCEPTION","action":"sendTransaction","data":null,"reason":null,"invocation":null,"revert":null,"transaction":{"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","data":""},"receipt":{"_type":"TransactionReceipt","blockHash":"0x5806c81e448003df8d586970956cff85e15703c2830c570f37a9cd11b4f14bf2","blockNumber":32580522,"contractAddress":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","cumulativeGasUsed":"100000","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","gasPrice":"900000000000","blobGasUsed":null,"blobGasPrice":null,"gasUsed":"100000","hash":"0xf0f22cf771f910e78dfae8a761eac4c8f7b561f9fcf2512108030b99976ec051","index":49,"logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421","status":0,"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785"},"shortMessage":"transaction execution reverted"}}
+2026-03-11 08:58:37 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 09:00:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-11 09:00:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 09:00:08 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 09:00:10 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 09:00:19 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 09:02:11 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 09:02:11 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-11 09:02:11 [[32minfo[39m] Telegram bot initialised
+2026-03-11 09:02:11 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 09:02:11 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 09:02:11 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-11 09:02:11 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 09:02:11 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 09:02:11 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 09:02:12 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 09:02:12 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 09:02:12 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-11 09:02:19 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 09:02:22 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 09:02:24 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"CALL_EXCEPTION","action":"sendTransaction","data":null,"reason":null,"invocation":null,"revert":null,"transaction":{"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","data":""},"receipt":{"_type":"TransactionReceipt","blockHash":"0x99c161baf2ca2163634c0c32b9f7ac89c038ec4891ca23b2519339458383d88f","blockNumber":32580640,"contractAddress":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","cumulativeGasUsed":"100000","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","gasPrice":"890000000000","blobGasUsed":null,"blobGasPrice":null,"gasUsed":"100000","hash":"0x3d5f6f9eb146526b7f80bc68fdb189f792bd44192108cdd05bb148a4979e833e","index":97,"logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421","status":0,"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785"},"shortMessage":"transaction execution reverted"}}
+2026-03-11 09:02:30 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 09:05:00 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 09:09:39 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-11 09:09:39 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-11 09:09:39 [[32minfo[39m] Telegram bot initialised
+2026-03-11 09:09:39 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 09:09:39 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-11 09:09:39 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-11 09:09:39 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-11 09:09:39 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-11 09:09:39 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-11 09:09:39 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 09:09:40 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 09:09:40 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-11 09:09:48 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 09:09:50 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 09:09:53 [[32minfo[39m] PriceAgent: SHAMBA reward claimed
+2026-03-11 09:09:59 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 09:10:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-11 09:10:00 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-11 09:10:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-11 09:10:11 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5500,"pct":"55.0%"}
+2026-03-11 09:10:20 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-11 09:15:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-14 16:41:07 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-14 16:41:07 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-14 16:41:07 [[32minfo[39m] Telegram bot initialised
+2026-03-14 16:41:07 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-14 16:41:07 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-14 16:41:07 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-14 16:41:07 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-14 16:41:07 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-14 16:41:07 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-14 16:41:07 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-14 16:41:07 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 16:41:09 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 16:41:09 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 16:41:16 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 16:41:18 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 16:41:28 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 16:41:50 [[31merror[39m] STK Push error {"err":{"message":"Request failed with status code 400","name":"AxiosError","stack":"AxiosError: Request failed with status code 400\n    at settle (/home/adams/hack/shambachain/backend/node_modules/axios/lib/core/settle.js:20:7)\n    at Unzip.handleStreamEnd (/home/adams/hack/shambachain/backend/node_modules/axios/lib/adapters/http.js:844:13)\n    at Unzip.emit (node:events:508:28)\n    at endReadableNT (node:internal/streams/readable:1701:12)\n    at processTicksAndRejections (node:internal/process/task_queues:89:21)\n    at Axios.request (/home/adams/hack/shambachain/backend/node_modules/axios/lib/core/Axios.js:46:41)\n    at processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at initiateStkPush (/home/adams/hack/shambachain/backend/src/mpesa/stk-push.ts:59:15)\n    at /home/adams/hack/shambachain/backend/src/index.ts:33:22","config":{"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false,"legacyInterceptorReqResOrdering":true},"adapter":["xhr","http","fetch"],"transformRequest":[null],"transformResponse":[null],"timeout":0,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json","Authorization":"Bearer ZLHfx4Yd6Xiiat95T4M9dMGRGPdA","User-Agent":"axios/1.13.6","Content-Length":"355","Accept-Encoding":"gzip, compress, deflate, br"},"method":"post","url":"https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest","data":"{\"BusinessShortCode\":\"174379\",\"Password\":\"MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjYwMzE0MTY0MTQ5\",\"Timestamp\":\"20260314164149\",\"TransactionType\":\"CustomerPayBillOnline\",\"Amount\":100,\"PartyB\":\"174379\",\"CallBackURL\":\"https://ten-apes-peel.loca.lt/api/mpesa/callback\",\"AccountReference\":\"WH-NKR-001\"}","allowAbsoluteUrls":true},"code":"ERR_BAD_REQUEST","status":400}}
+2026-03-14 16:45:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 16:45:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 16:47:12 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_14032026164711208746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-14 16:50:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 16:50:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 16:50:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 16:50:08 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 16:50:10 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 16:50:19 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 16:50:37 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_14032026165036976746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-14 16:51:40 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_14032026165140423746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-14 16:55:00 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 16:55:00 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:00:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 17:00:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:00:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:00:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 17:00:11 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 17:00:22 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 17:05:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:05:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:10:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 17:10:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:10:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:10:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 17:10:14 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 17:10:24 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 17:15:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:15:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:20:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 17:20:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:20:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:20:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 17:20:11 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 17:20:23 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 17:25:02 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:25:02 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:30:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 17:30:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:30:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:30:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 17:30:11 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 17:30:22 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 17:35:02 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:35:02 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:40:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 17:40:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:40:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:40:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 17:40:11 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 17:40:21 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 17:45:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:45:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:50:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 17:50:01 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-14 17:50:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:50:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 17:50:02 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-14 17:50:02 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-14 17:50:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 17:50:13 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 17:50:24 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 17:55:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 17:55:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:00:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 18:00:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:00:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:00:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 18:00:12 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 18:00:22 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 18:05:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:05:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:10:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 18:10:02 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:10:02 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:10:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 18:10:12 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 18:10:28 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 18:15:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:15:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:20:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 18:20:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:20:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:20:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 18:20:12 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 18:20:21 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 18:25:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:25:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:30:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 18:30:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:30:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:30:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 18:30:12 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 18:30:22 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 18:35:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:35:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:40:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 18:40:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:40:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:40:08 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 18:40:10 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 18:40:19 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 18:45:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:45:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:47:41 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-14 18:50:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 18:50:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:50:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 18:50:08 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 18:50:11 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 18:50:20 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 18:55:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 18:55:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 19:00:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 19:00:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 19:00:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 19:00:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 19:00:12 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 19:00:22 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 19:05:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 19:05:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 19:10:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 19:10:02 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 19:10:02 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 19:10:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 19:10:12 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 19:10:24 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 19:10:58 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-14 19:15:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 19:15:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 19:20:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 19:20:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 19:20:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 19:20:08 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 19:20:10 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 19:20:21 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 19:25:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 19:25:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 19:30:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-14 19:30:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-14 19:30:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-14 19:30:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-14 19:30:12 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5506,"pct":"55.1%"}
+2026-03-14 19:30:21 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-14 19:31:53 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: Error: read ECONNRESET"}}
+2026-03-14 19:31:54 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-14 20:20:15 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: Error: read ECONNRESET"}}
+2026-03-14 20:20:15 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-15 10:44:22 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-15 10:44:22 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-15 10:44:22 [[32minfo[39m] Telegram bot initialised
+2026-03-15 10:44:22 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-15 10:44:22 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-15 10:44:22 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-15 10:44:22 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-15 10:44:22 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-15 10:44:22 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-15 10:44:22 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 10:44:23 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 10:44:23 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 10:44:34 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 10:44:37 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5507,"pct":"55.1%"}
+2026-03-15 10:44:47 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-15 10:45:00 [[31merror[39m] PriceAgent tick error {"err":{"code":"ETIMEDOUT"}}
+2026-03-15 10:45:20 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_15032026104518149746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-15 10:50:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-15 10:50:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 10:50:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 10:50:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 10:50:13 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5507,"pct":"55.1%"}
+2026-03-15 10:50:27 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-15 10:55:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 10:55:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 10:56:32 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-15 10:56:32 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-15 10:56:32 [[32minfo[39m] Telegram bot initialised
+2026-03-15 10:56:32 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-15 10:56:32 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-15 10:56:32 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-15 10:56:32 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-15 10:56:32 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-15 10:56:32 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-15 10:56:33 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 10:56:34 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 10:56:34 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 10:56:42 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 10:56:46 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5508,"pct":"55.1%"}
+2026-03-15 10:56:51 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_15032026105649903746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-15 10:56:58 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-15 11:00:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-15 11:00:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:00:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 11:00:12 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 11:00:14 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5508,"pct":"55.1%"}
+2026-03-15 11:00:28 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-15 11:05:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:05:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 11:10:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-15 11:10:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:10:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 11:10:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 11:10:13 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5508,"pct":"55.1%"}
+2026-03-15 11:10:25 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-15 11:15:02 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:15:02 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 11:20:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-15 11:20:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:20:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 11:20:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 11:20:13 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5508,"pct":"55.1%"}
+2026-03-15 11:20:25 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-15 11:25:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:25:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 11:29:55 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-15 11:30:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-15 11:30:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:30:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 11:30:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 11:30:13 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5508,"pct":"55.1%"}
+2026-03-15 11:30:27 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-15 11:35:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:35:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 11:40:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-15 11:40:00 [[31merror[39m] PriceAgent tick error {"err":{"code":"ETIMEDOUT"}}
+2026-03-15 11:40:00 [[33mwarn[39m] RiskAgent: valuation update failed {"err":{"code":"ETIMEDOUT"}}
+2026-03-15 11:40:04 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5508,"pct":"55.1%"}
+2026-03-15 11:40:16 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-15 11:45:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:45:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 11:50:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-15 11:50:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:50:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 11:50:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 11:50:13 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5508,"pct":"55.1%"}
+2026-03-15 11:50:24 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-15 11:52:17 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: AggregateError"}}
+2026-03-15 11:55:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 11:55:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 12:00:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-15 12:00:02 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-15 12:00:02 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-15 12:00:12 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-15 12:00:16 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5508,"pct":"55.1%"}
+2026-03-15 12:00:26 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-15 12:42:40 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: Error: read ECONNRESET"}}
+2026-03-15 18:42:04 [[31merror[39m] Telegram polling error {"err":{"code":"EFATAL","message":"EFATAL: Error: read ECONNRESET"}}
+2026-03-16 15:27:30 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 15:27:30 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 15:27:30 [[32minfo[39m] Telegram bot initialised
+2026-03-16 15:27:30 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:27:30 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:27:30 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 15:27:30 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 15:27:30 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 15:27:30 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 15:27:30 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:27:32 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 15:27:32 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 15:31:24 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 15:31:24 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 15:31:24 [[32minfo[39m] Telegram bot initialised
+2026-03-16 15:31:24 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:31:24 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:31:24 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 15:31:24 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 15:31:24 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 15:31:24 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 15:31:24 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:31:25 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 15:31:25 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 15:31:27 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_16032026153127374746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-16 15:31:35 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:31:38 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 15:31:50 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 15:35:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 15:35:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 15:37:10 [[32minfo[39m] MPESA callback received {"checkoutRequestId":"ws_CO_16032026153127374746325227","resultCode":0}
+2026-03-16 15:37:10 [[32minfo[39m] MPESA payment confirmed {"receipt":"SHB000TEST01","amount":100,"phone":"254746325227","warehouse":"WH-NKR-001"}
+2026-03-16 15:37:12 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":11,"mpesaRef":"SHB000TEST01","transactionId":"0.0.8060605@1773664625.046411244"}
+2026-03-16 15:37:12 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":11}
+2026-03-16 15:37:12 [[32minfo[39m] Minting oCR NFT {"mpesaRef":"SHB000TEST01","custodian":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","farmer":"254746325227","warehouseId":"WH-NKR-001","weightKg":40,"hcsSequence":"11"}
+2026-03-16 15:37:13 [[31merror[39m] Error processing MPESA callback {"err":{"code":"UNSUPPORTED_OPERATION","operation":"getEnsAddress","info":{"network":{"name":"unknown","chainId":"296"}},"shortMessage":"network does not support ENS"}}
+2026-03-16 15:37:55 [[32minfo[39m] MPESA callback received {"checkoutRequestId":"ws_CO_16032026153127374746325227","resultCode":0}
+2026-03-16 15:37:55 [[32minfo[39m] MPESA payment confirmed {"receipt":"SHB000TEST01","amount":100,"phone":"254746325227","warehouse":"WH-NKR-001"}
+2026-03-16 15:37:56 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":12,"mpesaRef":"SHB000TEST01","transactionId":"0.0.8060605@1773664668.162080875"}
+2026-03-16 15:37:56 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":12}
+2026-03-16 15:37:56 [[32minfo[39m] Minting oCR NFT {"mpesaRef":"SHB000TEST01","custodian":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","farmer":"254746325227","warehouseId":"WH-NKR-001","weightKg":40,"hcsSequence":"12"}
+2026-03-16 15:37:57 [[31merror[39m] Error processing MPESA callback {"err":{"code":"UNSUPPORTED_OPERATION","operation":"getEnsAddress","info":{"network":{"name":"unknown","chainId":"296"}},"shortMessage":"network does not support ENS"}}
+2026-03-16 15:40:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-16 15:40:05 [[33mwarn[39m] RiskAgent: valuation update failed {"err":{"code":"TIMEOUT","shortMessage":"request timeout"}}
+2026-03-16 15:40:05 [[31merror[39m] PriceAgent tick error {"err":{"code":"TIMEOUT","shortMessage":"request timeout"}}
+2026-03-16 15:40:09 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 15:40:27 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 15:45:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 15:45:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 15:49:03 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 15:49:03 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 15:49:03 [[32minfo[39m] Telegram bot initialised
+2026-03-16 15:49:03 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:49:03 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:49:03 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 15:49:03 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 15:49:03 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 15:49:03 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 15:49:03 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:49:04 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 15:49:04 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 15:49:13 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:49:17 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 15:49:29 [[32minfo[39m] MPESA callback received {"checkoutRequestId":"test-001","resultCode":0}
+2026-03-16 15:49:29 [[33mwarn[39m] No pending STK push found {"id":"test-001"}
+2026-03-16 15:49:29 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 15:50:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-16 15:50:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 15:50:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 15:50:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:50:13 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 15:50:25 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 15:51:50 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_16032026155150249746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-16 15:52:42 [[32minfo[39m] MPESA callback received {"checkoutRequestId":"ws_CO_16032026155150249746325227","resultCode":0}
+2026-03-16 15:52:42 [[32minfo[39m] MPESA payment confirmed {"receipt":"SHB000TEST03","amount":100,"phone":"254746325227","warehouse":"WH-NKR-001"}
+2026-03-16 15:52:44 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":13,"mpesaRef":"SHB000TEST03","transactionId":"0.0.8060605@1773665558.758816420"}
+2026-03-16 15:52:44 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":13}
+2026-03-16 15:52:44 [[32minfo[39m] Minting oCR NFT {"mpesaRef":"SHB000TEST03","custodian":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","farmer":"254746325227","warehouseId":"WH-NKR-001","weightKg":40,"hcsSequence":"13"}
+2026-03-16 15:52:45 [[31merror[39m] Error processing MPESA callback {"err":{"code":"UNSUPPORTED_OPERATION","operation":"getEnsAddress","info":{"network":{"name":"unknown","chainId":"296"}},"shortMessage":"network does not support ENS"}}
+2026-03-16 15:55:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 15:55:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 15:55:16 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 15:55:16 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 15:55:16 [[32minfo[39m] Telegram bot initialised
+2026-03-16 15:55:16 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:55:16 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:55:16 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 15:55:16 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 15:55:16 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 15:55:16 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 15:55:17 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:55:18 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 15:55:18 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 15:55:27 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 15:55:27 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 15:55:27 [[32minfo[39m] Telegram bot initialised
+2026-03-16 15:55:27 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:55:27 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:55:27 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 15:55:27 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 15:55:27 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 15:55:27 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 15:55:28 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:55:29 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 15:55:29 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 15:55:39 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:55:41 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 15:55:43 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 15:58:14 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 15:58:14 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 15:58:14 [[32minfo[39m] Telegram bot initialised
+2026-03-16 15:58:14 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:58:14 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 15:58:14 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 15:58:14 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 15:58:14 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 15:58:14 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 15:58:14 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":6,"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:58:15 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 15:58:15 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 15:58:21 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_16032026155821597746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-16 15:58:23 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 15:58:25 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 15:58:35 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 15:58:47 [[32minfo[39m] MPESA callback received {"checkoutRequestId":"ws_CO_16032026155821597746325227","resultCode":0}
+2026-03-16 15:58:47 [[32minfo[39m] MPESA payment confirmed {"receipt":"SHB000TEST04","amount":100,"phone":"254746325227","warehouse":"WH-NKR-001"}
+2026-03-16 15:58:49 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":14,"mpesaRef":"SHB000TEST04","transactionId":"0.0.8060605@1773665923.527873947"}
+2026-03-16 15:58:49 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":14}
+2026-03-16 15:58:49 [[32minfo[39m] Minting oCR NFT {"mpesaRef":"SHB000TEST04","custodian":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","farmer":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","warehouseId":"WH-NKR-001","weightKg":40,"hcsSequence":"14"}
+2026-03-16 15:58:58 [[32minfo[39m] oCR NFT minted successfully {"tokenId":"7","mpesaRef":"SHB000TEST04","txHash":"0x85cadd6304644f25f8e12682a79938d259fd4430344a5f8e6fab061c55715069","blockNumber":32809138}
+2026-03-16 15:58:58 [[32minfo[39m] oCR NFT minted {"tokenId":"7","mpesaRef":"SHB000TEST04","weightKg":40,"hcsSequence":14}
+2026-03-16 15:58:58 [[33mwarn[39m] LoanAgent proposal failed {"err":{"code":"BAD_DATA","value":"0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000700000000000000000000000000000000000000000000000000000000000001800000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001c00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000000000000069b7fe8b000000000000000000000000000000000000000000000000000000006aa54c8b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000002ec236a1e06715712749bca3c7d242c3b9cae6d700000000000000000000000000000000000000000000006194049f30f720000000000000000000000000000000000000000000000000000000000000000000054d41495a45000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a57482d4e4b522d30303100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c5348423030305445535430340000000000000000000000000000000000000000","info":{"method":"getReceipt","signature":"getReceipt(uint256)"},"shortMessage":"could not decode result data"}}
+2026-03-16 16:00:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":6}
+2026-03-16 16:00:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 16:00:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 16:00:08 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6]}
+2026-03-16 16:00:10 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:00:19 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:02:58 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:02:58 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:02:58 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:02:58 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:02:58 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:02:58 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:02:58 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:02:58 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:02:58 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:02:59 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":7,"tokenIds":[1,2,3,4,5,6,7]}
+2026-03-16 16:02:59 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 16:02:59 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 16:03:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7]}
+2026-03-16 16:03:12 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:03:21 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:04:58 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:04:58 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:04:58 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:04:58 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:04:58 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:04:58 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:04:58 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:04:58 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:04:58 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:04:59 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":7,"tokenIds":[1,2,3,4,5,6,7]}
+2026-03-16 16:04:59 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:04:59 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:05:00 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:05:00 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:05:08 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7]}
+2026-03-16 16:05:10 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:05:12 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:05:12 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:05:12 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:05:12 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:05:12 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:05:12 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:05:12 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:05:12 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:05:12 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:05:12 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":7,"tokenIds":[1,2,3,4,5,6,7]}
+2026-03-16 16:05:13 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:05:13 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:05:21 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7]}
+2026-03-16 16:05:23 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:05:25 [[32minfo[39m] PriceAgent: SHAMBA reward claimed
+2026-03-16 16:05:33 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:08:55 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:08:55 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:08:55 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:08:55 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:08:55 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:08:55 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:08:55 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:08:55 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:08:55 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:08:56 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":7,"tokenIds":[1,2,3,4,5,6,7]}
+2026-03-16 16:08:57 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:08:57 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:09:05 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7]}
+2026-03-16 16:09:08 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:09:10 [[32minfo[39m] PriceAgent: SHAMBA reward claimed
+2026-03-16 16:09:11 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:10:04 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:10:04 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:10:04 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:10:04 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:10:04 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:10:04 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:10:04 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:10:04 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:10:04 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:10:04 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":7,"tokenIds":[1,2,3,4,5,6,7]}
+2026-03-16 16:10:05 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:10:05 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:10:09 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_16032026161009055746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-16 16:10:14 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7]}
+2026-03-16 16:10:16 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:10:19 [[32minfo[39m] PriceAgent: SHAMBA reward claimed
+2026-03-16 16:10:26 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:10:33 [[32minfo[39m] MPESA callback received {"checkoutRequestId":"ws_CO_16032026161009055746325227","resultCode":0}
+2026-03-16 16:10:33 [[32minfo[39m] MPESA payment confirmed {"receipt":"SHB000TEST06","amount":100,"phone":"254746325227","warehouse":"WH-NKR-001"}
+2026-03-16 16:10:36 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":20,"mpesaRef":"SHB000TEST06","transactionId":"0.0.8060605@1773666627.667638311"}
+2026-03-16 16:10:36 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":20}
+2026-03-16 16:10:36 [[32minfo[39m] Minting oCR NFT {"mpesaRef":"SHB000TEST06","custodian":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","farmer":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","warehouseId":"WH-NKR-001","weightKg":40,"hcsSequence":"20"}
+2026-03-16 16:10:45 [[32minfo[39m] oCR NFT minted successfully {"tokenId":"8","mpesaRef":"SHB000TEST06","txHash":"0x26fd71845f30bcde99f39f04acfac0c0fd1b62944399364c66aa32cfc840230e","blockNumber":32809491}
+2026-03-16 16:10:45 [[32minfo[39m] oCR NFT minted {"tokenId":"8","mpesaRef":"SHB000TEST06","weightKg":40,"hcsSequence":20}
+2026-03-16 16:10:46 [[33mwarn[39m] LoanAgent proposal failed {"err":{"code":"BAD_DATA","value":"0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000001800000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001c0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000140000000000000000000000000000000000000000000000000000000069b8014e000000000000000000000000000000000000000000000000000000006aa54f4e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000002ec236a1e06715712749bca3c7d242c3b9cae6d700000000000000000000000000000000000000000000006194049f30f720000000000000000000000000000000000000000000000000000000000000000000054d41495a45000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a57482d4e4b522d30303100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c5348423030305445535430360000000000000000000000000000000000000000","info":{"method":"getReceipt","signature":"getReceipt(uint256)"},"shortMessage":"could not decode result data"}}
+2026-03-16 16:15:26 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:15:26 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:15:26 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:15:26 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:15:26 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:15:26 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:15:26 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:15:26 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:15:26 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:15:26 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":8,"tokenIds":[1,2,3,4,5,6,7,8]}
+2026-03-16 16:15:27 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:15:27 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:15:31 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_16032026161531547746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-16 16:15:36 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8]}
+2026-03-16 16:15:38 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:15:41 [[32minfo[39m] PriceAgent: SHAMBA reward claimed
+2026-03-16 16:15:48 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:16:04 [[32minfo[39m] MPESA callback received {"checkoutRequestId":"ws_CO_16032026161531547746325227","resultCode":0}
+2026-03-16 16:16:04 [[32minfo[39m] MPESA payment confirmed {"receipt":"SHB000TEST07","amount":100,"phone":"254746325227","warehouse":"WH-NKR-001"}
+2026-03-16 16:16:07 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":22,"mpesaRef":"SHB000TEST07","transactionId":"0.0.8060605@1773666959.326389356"}
+2026-03-16 16:16:07 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":22}
+2026-03-16 16:16:07 [[32minfo[39m] Minting oCR NFT {"mpesaRef":"SHB000TEST07","custodian":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","farmer":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","warehouseId":"WH-NKR-001","weightKg":40,"hcsSequence":"22"}
+2026-03-16 16:16:16 [[32minfo[39m] oCR NFT minted successfully {"tokenId":"9","mpesaRef":"SHB000TEST07","txHash":"0xd8d55185c3b9a4f619b196f2135297004a5647e73d07e4da2e5e47529ba36485","blockNumber":32809657}
+2026-03-16 16:16:16 [[32minfo[39m] oCR NFT minted {"tokenId":"9","mpesaRef":"SHB000TEST07","weightKg":40,"hcsSequence":22}
+2026-03-16 16:16:17 [[33mwarn[39m] LoanAgent proposal failed {"err":{"code":"BAD_DATA","value":"0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000900000000000000000000000000000000000000000000000000000000000001800000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001c0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000069b80299000000000000000000000000000000000000000000000000000000006aa5509900000000000000000000000000000000000000000000000000000000000000000000000000000000000000002ec236a1e06715712749bca3c7d242c3b9cae6d700000000000000000000000000000000000000000000006194049f30f720000000000000000000000000000000000000000000000000000000000000000000054d41495a45000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a57482d4e4b522d30303100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c5348423030305445535430370000000000000000000000000000000000000000","info":{"method":"getReceipt","signature":"getReceipt(uint256)"},"shortMessage":"could not decode result data"}}
+2026-03-16 16:19:08 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:19:08 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:19:08 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:19:08 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:19:08 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:19:08 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:19:08 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:19:08 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:19:08 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:19:09 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":9,"tokenIds":[1,2,3,4,5,6,7,8,9]}
+2026-03-16 16:19:10 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:19:10 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:19:12 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_16032026161912417746325227","phone":"254746325227","amount":100,"warehouse":"WH-NKR-001"}
+2026-03-16 16:19:19 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9]}
+2026-03-16 16:19:22 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:19:24 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"CALL_EXCEPTION","action":"sendTransaction","data":null,"reason":null,"invocation":null,"revert":null,"transaction":{"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","data":""},"receipt":{"_type":"TransactionReceipt","blockHash":"0x3d77cc332b2aa5c39966515785acf10a03a9f937e56b75cc3bbe28f453d98a0c","blockNumber":32809750,"contractAddress":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785","cumulativeGasUsed":"0","from":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","gasPrice":"870000000000","blobGasUsed":null,"blobGasPrice":null,"gasUsed":"0","hash":"0x885deabbaeaf130e038737eec359753372af2c545e532388087b3ede81348836","index":9,"logs":[],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421","status":0,"to":"0x02A8AdD3ECAE73Adb908048E70A9fe18156B3785"},"shortMessage":"transaction execution reverted"}}
+2026-03-16 16:19:32 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:19:36 [[32minfo[39m] MPESA callback received {"checkoutRequestId":"ws_CO_16032026161912417746325227","resultCode":0}
+2026-03-16 16:19:36 [[32minfo[39m] MPESA payment confirmed {"receipt":"SHB000TEST08","amount":100,"phone":"254746325227","warehouse":"WH-NKR-001"}
+2026-03-16 16:19:38 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":24,"mpesaRef":"SHB000TEST08","transactionId":"0.0.8060605@1773667172.622645312"}
+2026-03-16 16:19:38 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":24}
+2026-03-16 16:19:38 [[32minfo[39m] Minting oCR NFT {"mpesaRef":"SHB000TEST08","custodian":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","farmer":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","warehouseId":"WH-NKR-001","weightKg":40,"hcsSequence":"24"}
+2026-03-16 16:19:46 [[32minfo[39m] oCR NFT minted successfully {"tokenId":"10","mpesaRef":"SHB000TEST08","txHash":"0xa2e2e7e00343f9e19240a1bbcc243c64fedf2f94ce64c3ae93834a32bfcba979","blockNumber":32809762}
+2026-03-16 16:19:46 [[32minfo[39m] oCR NFT minted {"tokenId":"10","mpesaRef":"SHB000TEST08","weightKg":40,"hcsSequence":24}
+2026-03-16 16:19:47 [[33mwarn[39m] LoanAgent proposal failed {"err":{"code":"BAD_DATA","value":"0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000001800000000000000000000000000000000000000000000000000000000000000028000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001c0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000180000000000000000000000000000000000000000000000000000000069b8036c000000000000000000000000000000000000000000000000000000006aa5516c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000002ec236a1e06715712749bca3c7d242c3b9cae6d700000000000000000000000000000000000000000000006194049f30f720000000000000000000000000000000000000000000000000000000000000000000054d41495a45000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a57482d4e4b522d30303100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c5348423030305445535430380000000000000000000000000000000000000000","info":{"method":"getReceipt","signature":"getReceipt(uint256)"},"shortMessage":"could not decode result data"}}
+2026-03-16 16:20:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":9}
+2026-03-16 16:20:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:20:08 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9]}
+2026-03-16 16:20:10 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:20:20 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:22:14 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:22:14 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:22:14 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:22:14 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:22:14 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:22:14 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:22:14 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:22:14 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:22:14 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:22:14 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":10,"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:22:15 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:22:15 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:22:22 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"NONCE_EXPIRED","transaction":"0x02f89082012881a6808601a7c0741800830493e09402a8add3ecae73adb908048e70a9fe18156b378580a40a31942a0000000000000000000000002ec236a1e06715712749bca3c7d242c3b9cae6d7c080a0452ec7aadd04725b650450bcd5fea9a667a04f7c68f248af3a840bb058fd2687a068af04d07e71c41ba0b2f3ea9d02c6cdd579ad442ea3c8db5e56ed66a08cb075","info":{"error":{"code":32001,"message":"[Request ID: fc6a1dbb-abe1-4570-8fcc-e432207f47a8] Nonce too low. Provided nonce: 166, current nonce: 167"}},"shortMessage":"nonce has already been used"}}
+2026-03-16 16:22:23 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:22:25 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:22:36 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:24:11 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:24:11 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:24:11 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:24:11 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:24:11 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:24:11 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:24:11 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:24:11 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:24:11 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:24:11 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":10,"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:24:12 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:24:12 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:24:20 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:24:20 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:24:20 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:24:20 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:24:20 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:24:20 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:24:20 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:24:20 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:24:20 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:24:21 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":10,"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:24:22 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:24:22 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:24:24 [[33mwarn[39m] RiskAgent: valuation update failed {"err":{"code":"NONCE_EXPIRED","transaction":"0x02f9025282012881a9808601a7c0741800830f424094f033a7ff995a2a87c2ba4748bff7626d6482da6480b901e48265d509000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000001c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000700000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000009000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000c080a0f463a3152a8a8138d1dc451a660f685737be886b09f89c0249ed582e8c1e8187a05847918291ddd909932a6fff702cc6e55aef48eb8f18dccace80968e168a423f","info":{"error":{"code":32001,"message":"[Request ID: ec24d776-b528-46db-9beb-bbdc3b385df6] Nonce too low. Provided nonce: 169, current nonce: 170"}},"shortMessage":"nonce has already been used"}}
+2026-03-16 16:24:27 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:24:27 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:24:27 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:24:27 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:24:27 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:24:27 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:24:27 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:24:27 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:24:27 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:24:27 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":10,"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:24:28 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:24:28 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:24:37 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:24:39 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:24:41 [[32minfo[39m] PriceAgent: SHAMBA reward claimed
+2026-03-16 16:24:51 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:25:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:28:09 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:28:09 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:28:09 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:28:09 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:28:09 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:28:09 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:28:09 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:28:09 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:28:09 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:28:10 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":10,"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:28:11 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:28:11 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:28:21 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:28:24 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:28:26 [[32minfo[39m] PriceAgent: SHAMBA reward claimed
+2026-03-16 16:31:59 [[32minfo[39m] ShambaChain Backend starting...
+2026-03-16 16:31:59 [[32minfo[39m] Telegram bot started (polling mode)
+2026-03-16 16:31:59 [[32minfo[39m] Telegram bot initialised
+2026-03-16 16:31:59 [[32minfo[39m] PriceAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:31:59 [[32minfo[39m] RiskAgent started {"wallet":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7"}
+2026-03-16 16:31:59 [[32minfo[39m] RiskAgent: liquidation monitoring via poll (Hedera hashio limitation)
+2026-03-16 16:31:59 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":0}
+2026-03-16 16:31:59 [[32minfo[39m] ShambaChain Backend fully started {"port":3000,"network":"testnet","contracts":{"receiptFactory":"0x451f2f54A027F9Ec359f1411f341878d645dD337","collateralVault":"0x9648Abb0943C9409Ea2d501E1a9773aCbE836Bb1","riskOracle":"0xf033A7Ff995a2A87C2ba4748bfF7626D6482Da64"}}
+2026-03-16 16:31:59 [[32minfo[39m] HTTP server listening on port 3000
+2026-03-16 16:31:59 [[32minfo[39m] RiskAgent: discovered tokens via mirror node logs {"count":10,"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:32:00 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:32:00 [[32minfo[39m] PriceAgent: significant move ↑ 0.0% {"old":"0.00","new":"45.00"}
+2026-03-16 16:32:03 [[32minfo[39m] STK Push initiated {"checkoutRequestId":"ws_CO_16032026163202629746325227","phone":"254746325227","amount":20,"warehouse":"WH-NKR-001"}
+2026-03-16 16:32:08 [[33mwarn[39m] PriceAgent: SHAMBA reward failed (may be out of supply) {"rewardErr":{"code":"NONCE_EXPIRED","transaction":"0x02f89082012881b0808601a7c0741800830493e09402a8add3ecae73adb908048e70a9fe18156b378580a40a31942a0000000000000000000000002ec236a1e06715712749bca3c7d242c3b9cae6d7c001a0ba5b46d6421b73d2c17866d628e8b48120c0c9d01413e019390668468cf441c5a05ffb1f94b3b834482d599359e5cc1dc9c0d1442c709e9a32a75ea54dd33cd2fb","info":{"error":{"code":32001,"message":"[Request ID: e6bf5c2c-ce27-4ebf-905e-f000b044e8b8] Nonce too low. Provided nonce: 176, current nonce: 177"}},"shortMessage":"nonce has already been used"}}
+2026-03-16 16:32:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:32:15 [[33mwarn[39m] RiskAgent: error checking tokenId 1 {"err":{"code":"TIMEOUT","shortMessage":"request timeout"}}
+2026-03-16 16:32:18 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:32:30 [[32minfo[39m] MPESA callback received {"checkoutRequestId":"ws_CO_16032026163202629746325227","resultCode":0}
+2026-03-16 16:32:30 [[32minfo[39m] MPESA payment confirmed {"receipt":"SHB000TEST09","amount":20,"phone":"254746325227","warehouse":"WH-NKR-001"}
+2026-03-16 16:32:31 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:32:31 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":31,"mpesaRef":"SHB000TEST09","transactionId":"0.0.8060605@1773667943.253275439"}
+2026-03-16 16:32:31 [[32minfo[39m] HCS deposit event written {"topicId":"0.0.8157255","sequenceNumber":31}
+2026-03-16 16:32:31 [[32minfo[39m] Minting oCR NFT {"mpesaRef":"SHB000TEST09","custodian":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","farmer":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","warehouseId":"WH-NKR-001","weightKg":8,"hcsSequence":"31"}
+2026-03-16 16:32:43 [[32minfo[39m] oCR NFT minted successfully {"tokenId":"11","mpesaRef":"SHB000TEST09","txHash":"0x451b16680d7b50a092c6736000df36107b811830afcb83dd111000f1a2928530","blockNumber":32810150}
+2026-03-16 16:32:43 [[32minfo[39m] oCR NFT minted {"tokenId":"11","mpesaRef":"SHB000TEST09","weightKg":8,"hcsSequence":31}
+2026-03-16 16:32:47 [[32minfo[39m] LoanAgent: loan proposal generated {"tokenId":"11","farmer":"0x2ec236a1e06715712749BCA3c7D242c3b9caE6D7","weightKg":40,"maxLoanUsdcH":"1.66"}
+2026-03-16 16:35:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:40:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":10}
+2026-03-16 16:40:02 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:40:13 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:40:16 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:40:31 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:45:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:50:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":10}
+2026-03-16 16:50:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 16:50:11 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 16:50:14 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 16:50:29 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 16:55:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 17:00:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":10}
+2026-03-16 17:00:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":false}
+2026-03-16 17:00:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 17:00:14 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 17:00:30 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 17:05:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 17:05:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 17:10:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":10}
+2026-03-16 17:10:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 17:10:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 17:10:09 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 17:10:13 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 17:10:26 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 17:15:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 17:15:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 17:20:00 [[32minfo[39m] RiskAgent: starting risk scan {"tokenCount":10}
+2026-03-16 17:20:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 17:20:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update
+2026-03-16 17:20:10 [[32minfo[39m] RiskAgent: valuation update triggered {"tokenIds":[1,2,3,4,5,6,7,8,9,10]}
+2026-03-16 17:20:13 [[32minfo[39m] RiskAgent: LTV check {"tokenId":4,"loanId":"1","ltvBps":5510,"pct":"55.1%"}
+2026-03-16 17:20:29 [[32minfo[39m] RiskAgent: scan complete {"checked":1}
+2026-03-16 17:25:01 [[32minfo[39m] PriceAgent: price fetched {"priceKes":"45.00","stale":true}
+2026-03-16 17:25:01 [[33mwarn[39m] PriceAgent: oracle price is stale — skipping update

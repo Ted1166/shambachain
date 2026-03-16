@@ -1,0 +1,1 @@
+{"version":3,"file":"writer.d.ts","sourceRoot":"","sources":["../../src/hcs/writer.ts"],"names":[],"mappings":"AAMA,OAAO,EAAE,mBAAmB,EAAE,cAAc,EAAE,cAAc,EAAE,MAAM,aAAa,CAAC;AAOlF;;;;;;;;;;;GAWG;AACH,wBAAsB,iBAAiB,CACrC,OAAO,EAAE,mBAAmB,GAC3B,OAAO,CAAC,cAAc,CAAC,CA6CzB;AAED;;;GAGG;AACH,wBAAsB,aAAa,CAAC,KAAK,EAAE,cAAc,GAAG,OAAO,CAAC,cAAc,CAAC,CAsBlF"}

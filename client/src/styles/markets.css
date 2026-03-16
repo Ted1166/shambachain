@@ -1,0 +1,74 @@
+/* Add this at the start of your markets.css file */
+.markets-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 1200px;  /* or your preferred max width */
+  margin: 0 auto;     /* this centers everything */
+  padding: var(--space-6);
+  width: 100%;
+}
+
+/* Ensure all children stay within the centered container */
+.markets-page > * {
+  width: 100%;
+}
+
+/* Keep the existing styles below */
+.market-tabs { 
+  display: flex; 
+  gap: var(--space-2); 
+  border-bottom: 1px solid var(--border); 
+  padding-bottom: var(--space-1); 
+}
+
+.markets-grid { 
+  display: grid; 
+  grid-template-columns: 1fr 380px; 
+  gap: var(--space-6); 
+  align-items: start; 
+}
+
+
+/* Forward */
+.forward-hero { display: grid; grid-template-columns: auto 1px 1fr; gap: var(--space-6); align-items: center; }
+.forward-offer { display: flex; flex-direction: column; gap: var(--space-1); text-align: center; }
+.forward-price { font-size: 2.5rem; font-weight: 700; color: var(--green-bright); font-family: var(--font-mono); letter-spacing: -0.04em; line-height: 1; }
+.forward-divider { width: 1px; height: 80px; background: var(--border); }
+.forward-meta { display: flex; flex-direction: column; gap: var(--space-3); }
+.forward-row { display: flex; justify-content: space-between; align-items: center; padding: var(--space-2) 0; border-bottom: 1px solid var(--border); }
+.forward-row:last-child { border-bottom: none; }
+
+/* Risk */
+.risk-card { display: flex; flex-direction: column; gap: var(--space-5); }
+.risk-question {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+  padding: var(--space-4);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--green-bright);
+}
+.odds-section { display: flex; flex-direction: column; gap: var(--space-3); }
+.odds-labels { display: flex; justify-content: space-between; }
+.odds-yes { font-size: 0.75rem; font-weight: 700; color: var(--green-bright); }
+.odds-no  { font-size: 0.75rem; font-weight: 700; color: var(--red); }
+.odds-bar { height: 12px; border-radius: 100px; display: flex; overflow: hidden; }
+.odds-bar-yes { background: linear-gradient(90deg, var(--green-dim), var(--green-bright)); transition: width 0.6s var(--ease); }
+.odds-bar-no  { background: linear-gradient(90deg, var(--red-dim), var(--red)); transition: width 0.6s var(--ease); }
+
+.pool-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-3); }
+.pool-stat { display: flex; flex-direction: column; gap: var(--space-1); padding: var(--space-3); background: var(--bg-elevated); border-radius: var(--radius-md); border: 1px solid var(--border); }
+.pool-value { font-size: 0.9rem; font-weight: 700; color: var(--green-bright); font-family: var(--font-mono); }
+.pool-value.no { color: var(--red); }
+.pool-value.white { color: var(--text-primary); }
+
+.risk-actions { display: flex; gap: var(--space-3); }
+
+@media (max-width: 900px) {
+  .markets-grid { grid-template-columns: 1fr; }
+  .pool-stats { grid-template-columns: repeat(2,1fr); }
+}

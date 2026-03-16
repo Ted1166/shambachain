@@ -1,0 +1,91 @@
+/* ── ReceiptCard compact ── */
+.receipt-card-compact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--duration);
+}
+.receipt-card-compact:hover { border-color: var(--border-mid); }
+.rc-compact-icon  { font-size: 1.2rem; flex-shrink: 0; }
+.rc-compact-body  { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.rc-compact-id    { font-size: 0.8rem; font-weight: 700; color: var(--text-primary); }
+.rc-compact-detail{ font-size: 0.65rem; color: var(--text-muted); }
+.rc-compact-right { display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-1); }
+.rc-compact-value { font-size: 0.75rem; font-weight: 700; color: var(--green-bright); }
+
+/* ── LoanCard ── */
+.loan-card { display: flex; flex-direction: column; gap: var(--space-4); }
+.loan-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.loan-card-id    { display: flex; align-items: baseline; gap: var(--space-2); }
+.lc-label        { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+.lc-number       { font-family: var(--font-display); font-size: 1.1rem; font-weight: 800; color: var(--text-primary); }
+.loan-card-ltv   { display: flex; flex-direction: column; gap: var(--space-2); }
+.loan-ltv-row    { display: flex; align-items: center; justify-content: space-between; }
+.loan-ltv-pct    { font-size: 1rem; font-weight: 700; font-family: var(--font-mono); }
+.loan-card-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+.loan-card-stat      { display: flex; flex-direction: column; gap: 2px; }
+.loan-card-stat-val  { font-size: 0.8rem; font-weight: 700; color: var(--text-primary); }
+.loan-card-stat-val.green { color: var(--green-bright); }
+.loan-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--border);
+}
+.loan-card-token { font-size: 0.7rem; color: var(--text-secondary); }
+.loan-card-due   { font-size: 0.65rem; color: var(--text-muted); }
+
+/* ── MarketCard ── */
+.market-card { display: flex; flex-direction: column; gap: var(--space-4); }
+.market-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.market-question {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: var(--space-1);
+  line-height: 1.4;
+}
+.market-card-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+.market-card-stat { display: flex; flex-direction: column; gap: 2px; }
+.market-stat-val  { font-size: 0.8rem; font-weight: 700; color: var(--text-primary); }
+
+.forward-offer-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+.forward-offer-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--green-bright);
+  font-family: var(--font-mono);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}

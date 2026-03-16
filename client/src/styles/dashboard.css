@@ -1,0 +1,149 @@
+/* Add this at the start of your dashboard.css file */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 1200px;  /* or your preferred max width */
+  margin: 0 auto;     /* this centers the entire dashboard */
+  padding: var(--space-6); /* add some padding for smaller screens */
+  width: 100%;
+}
+
+/* Optional: if you want the cards to be full width within the centered container */
+.dashboard > * {
+  width: 100%;
+}
+
+.card-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+}
+.card-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+/* Stat card */
+.stat-card { position: relative; overflow: hidden; }
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--green-bright), transparent);
+  opacity: 0;
+  transition: opacity var(--duration);
+}
+.stat-card.card-glow::before { opacity: 1; }
+.stat-sub {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+}
+.live-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.6rem;
+  color: var(--green-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: var(--space-3);
+}
+
+/* Main two-col */
+.dashboard-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+/* Loan health */
+.loan-health-body { display: flex; flex-direction: column; gap: var(--space-5); }
+.ltv-display { display: flex; align-items: baseline; gap: var(--space-3); }
+.ltv-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--green-bright);
+  font-family: var(--font-mono);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.ltv-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+.ltv-thresholds { position: relative; }
+.ltv-bar { position: relative; }
+.ltv-marker {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: var(--amber);
+  opacity: 0.6;
+}
+.ltv-marker.danger { background: var(--red); }
+.threshold-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+}
+.loan-detail-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
+.loan-detail { display: flex; flex-direction: column; gap: var(--space-1); }
+
+/* Activity */
+.activity-feed { display: flex; flex-direction: column; gap: var(--space-3); }
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border);
+}
+.activity-item:last-child { border-bottom: none; }
+.activity-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+.activity-dot.green { background: var(--green-bright); box-shadow: 0 0 6px var(--green-bright); }
+.activity-dot.amber { background: var(--amber); }
+.activity-dot.red   { background: var(--red); }
+.activity-body { flex: 1; }
+.activity-label { font-size: 0.8rem; color: var(--text-primary); }
+.activity-sub   { font-size: 0.7rem; color: var(--text-muted); margin-top: 2px; }
+.activity-right { text-align: right; }
+.activity-value { font-size: 0.8rem; color: var(--green-bright); font-weight: 700; }
+.activity-time  { font-size: 0.65rem; color: var(--text-muted); margin-top: 2px; }
+
+/* Contracts */
+.contracts-grid { display: flex; flex-direction: column; gap: var(--space-2); }
+.contract-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  transition: border-color var(--duration);
+}
+.contract-row:hover { border-color: var(--border-mid); }
+.contract-name { font-size: 0.75rem; color: var(--text-secondary); }
+.contract-addr {
+  font-size: 0.7rem;
+  color: var(--green-dim);
+  font-family: var(--font-mono);
+}
+.contract-addr:hover { color: var(--green-bright); }
+
+.empty-state { color: var(--text-muted); font-size: 0.8rem; padding: var(--space-4) 0; text-align: center; }
+
+@media (max-width: 900px) {
+  .dashboard-main { grid-template-columns: 1fr; }
+}

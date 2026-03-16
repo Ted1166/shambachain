@@ -1,0 +1,215 @@
+/* Add this at the start of your receipts.css file */
+.receipts-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 1200px;  /* or your preferred max width */
+  margin: 0 auto;     /* this centers everything */
+  padding: var(--space-6);
+  width: 100%;
+}
+
+/* Ensure all children stay within the centered container */
+.receipts-page > * {
+  width: 100%;
+}
+
+/* Keep the filter tabs properly aligned */
+.filter-tabs {
+  display: flex;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--space-1);
+  width: 100%;
+}
+
+/* Keep the grid layout */
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-4);
+  width: 100%;
+}
+
+/* ... rest of your existing styles remain exactly the same ... */
+.filter-tab {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all var(--duration);
+  margin-bottom: -1px;
+}
+.filter-tab:hover { color: var(--text-secondary); }
+.filter-tab.active {
+  color: var(--green-bright);
+  border-bottom-color: var(--green-bright);
+}
+.filter-count {
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  border-radius: 100px;
+  padding: 1px 6px;
+  font-size: 0.65rem;
+}
+.filter-tab.active .filter-count {
+  background: var(--green-glow);
+  color: var(--green-bright);
+}
+
+/* Receipt card */
+.receipt-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  overflow: hidden;
+}
+.receipt-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--green-glow);
+  opacity: 0;
+  transition: opacity var(--duration);
+  pointer-events: none;
+}
+.receipt-card:hover::after { opacity: 1; }
+
+.receipt-card-top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.receipt-icon { font-size: 1.5rem; }
+.receipt-id {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  flex: 1;
+}
+.receipt-commodity {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+.receipt-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+.receipt-metric { display: flex; flex-direction: column; gap: 2px; }
+.receipt-metric-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.receipt-metric-value.green { color: var(--green-bright); }
+
+.receipt-warehouse {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+}
+.receipt-warehouse-icon { color: var(--green-dim); }
+
+.receipt-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.receipt-mpesa {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: var(--space-6);
+  animation: fadeInUp 0.2s var(--ease);
+}
+.modal {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-green-strong);
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--border);
+}
+.modal-title-row { display: flex; align-items: center; gap: var(--space-4); }
+.modal-icon { font-size: 2rem; }
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+.modal-sub { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
+.modal-close {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.8rem;
+  transition: all var(--duration);
+}
+.modal-close:hover { color: var(--text-primary); border-color: var(--border-mid); }
+
+.modal-body { padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-4); }
+.modal-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+.modal-field { display: flex; flex-direction: column; gap: var(--space-1); }
+.modal-address {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  word-break: break-all;
+  background: var(--bg-elevated);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+.modal-actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}

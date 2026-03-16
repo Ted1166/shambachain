@@ -1,0 +1,101 @@
+.connect-wrapper { display: flex; flex-direction: column; gap: var(--space-2); }
+
+.connect-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  background: var(--green-glow);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-md);
+  color: var(--green-bright);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--duration) var(--ease);
+  justify-content: center;
+}
+.connect-btn:hover {
+  background: var(--green-glow-strong);
+  border-color: var(--border-bright);
+  box-shadow: var(--shadow-green);
+  transform: translateY(-1px);
+}
+.connect-btn.connecting {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+.connect-btn.wrong-network {
+  background: rgba(255,170,0,0.1);
+  border-color: rgba(255,170,0,0.3);
+  color: var(--amber);
+}
+.connect-btn.wrong-network:hover {
+  background: rgba(255,170,0,0.2);
+  box-shadow: 0 0 20px rgba(255,170,0,0.15);
+}
+
+.connect-icon { font-size: 0.9rem; }
+
+/* Spinner */
+.connect-spinner {
+  display: inline-block;
+  width: 12px; height: 12px;
+  border: 2px solid var(--green-mute);
+  border-top-color: var(--green-bright);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+/* Connected pill */
+.wallet-connected { width: 100%; }
+.wallet-address-pill {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--duration);
+}
+.wallet-address-pill:hover {
+  border-color: var(--red);
+  background: rgba(255,68,68,0.05);
+}
+.wallet-address-pill:hover .wallet-addr::after {
+  content: ' · disconnect';
+  color: var(--red);
+  font-size: 0.6rem;
+}
+.wallet-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--green-bright);
+  box-shadow: 0 0 6px var(--green-bright);
+  flex-shrink: 0;
+}
+.wallet-addr {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  flex: 1;
+}
+.wallet-chain {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.connect-error {
+  font-size: 0.65rem;
+  color: var(--red);
+  text-align: center;
+  line-height: 1.4;
+}

@@ -1,0 +1,134 @@
+import { useState, useEffect } from 'react';
+import { ethers } from 'ethers';
+import { CONTRACTS, RISK_MARKET_ABI, FORWARD_MARKET_ABI, getProvider } from '../config/contracts';
+import { RiskMarketCard, ForwardBidCard } from '../components/cards/MarketCard';
+import { PoolDonut } from '../components/charts/PoolDonut';
+import '../styles/markets.css';
+
+export function Markets() {
+  const [tab, setTab] = useState<'forward' | 'risk'>('forward');
+  const [riskMarket, setRiskMarket] = useState<any>(null);
+  const [forwardBid, setForwardBid] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetch() {
+      setLoading(true);
+      try {
+        const provider = getProvider();
+        const risk = new ethers.Contract(CONTRACTS.riskMarket, RISK_MARKET_ABI, provider);
+        const fwd  = new ethers.Contract(CONTRACTS.forwardMarket, FORWARD_MARKET_ABI, provider);
+
+        const [rm, odds] = await Promise.all([
+        risk.getMarket(1).catch(() => null),
+        risk.getMarketOdds(1).catch(() => null),
+      ]);
+      const fb = await fwd.getBid(1).catch(() => null);
+
+      if (rm && odds) {
+        setRiskMarket({
+          marketId:   Number(rm.marketId),
+          tokenId:    Number(rm.tokenId),
+          loanId:     Number(rm.loanId),
+          deadline:   new Date(Number(rm.deadline) * 1000),
+          status:     Number(rm.status),
+          yesPool:    Number(rm.yesPool) / 1e6,
+          noPool:     Number(rm.noPool) / 1e6,
+          totalPool:  Number(rm.totalPool) / 1e6,
+          yesProbPct: Number(odds.impliedYesProbBps) / 100,
+        });
+      }
+
+      if (fb) {
+        setForwardBid({
+          bidId:          Number(fb.bidId),
+          buyer:          fb.buyer,
+          tokenId:        Number(fb.tokenId),
+          commodityType:  fb.commodityType,
+          offerUsdcH:     Number(fb.offerUsdcH) / 1e6,
+          settlementDate: new Date(Number(fb.settlementDate) * 1000),
+          buyerRef:       fb.buyerRef,
+          status:         Number(fb.status),
+        });
+      }
+      } catch (e) {
+        console.error(e);
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetch();
+  }, []);
+
+  // const RISK_STATUS  = ['Open', 'Resolved', 'Cancelled', 'Expired'];
+  // const FORWARD_STATUS = ['Open', 'Accepted', 'Settled', 'Cancelled'];
+
+  return (
+    <div className="markets-page animate-in">
+      <div className="page-header">
+        <h1 className="page-title">Markets</h1>
+        <p className="page-subtitle">Forward contracts + on-chain risk prediction pools</p>
+      </div>
+
+      <div className="market-tabs animate-in-2">
+        <button className={`filter-tab ${tab==='forward'?'active':''}`} onClick={()=>setTab('forward')}>
+          Forward Market
+        </button>
+        <button className={`filter-tab ${tab==='risk'?'active':''}`} onClick={()=>setTab('risk')}>
+          Risk Market
+        </button>
+      </div>
+
+      {loading ? (
+        <div className="skeleton" style={{height: 300, borderRadius: 12}} />
+      ) : tab === 'forward' ? (
+        <ForwardSection bid={forwardBid} />
+      ) : (
+        <RiskSection market={riskMarket} />
+      )}
+    </div>
+  );
+}
+
+function ForwardSection({ bid }: { bid: any}) {
+  // if (!bid) return <div className="empty-state">No forward bids</div>;
+  // const daysLeft = Math.max(0, Math.floor((bid.settlementDate - Date.now()) / 86_400_000));
+
+  return (
+    <div className="animate-in-3">
+      <div className="markets-grid">
+        <ForwardBidCard bid={bid} />
+      </div>
+    </div>
+    
+  );
+}
+
+function RiskSection({ market}: { market: any}) {
+  if (!market) return <div className="empty-state">No risk markets</div>;
+  // const yesPct = market.yesProbPct || 0;
+  // const noPct  = 100 - yesPct;
+  // const daysLeft = Math.max(0, Math.floor((market.deadline - Date.now()) / 86_400_000));
+
+  return (
+    <div className="animate-in-3">
+      <div className="markets-grid">
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-6)' }}>
+          <RiskMarketCard market={market} />
+          <div className="card" style={{ display: 'flex', justifyContent: 'center', padding: 'var(--space-8)' }}>
+            <PoolDonut yesPool={market.yesPool} noPool={market.noPool} size={160} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// function ForwardRow({ label, value }: { label: string; value: string }) {
+//   return (
+//     <div className="forward-row">
+//       <span className="stat-label">{label}</span>
+//       <span style={{fontSize:'0.8rem', color:'var(--text-primary)'}}>{value}</span>
+//     </div>
+//   );
+// }
