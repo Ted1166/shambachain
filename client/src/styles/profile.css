@@ -1,0 +1,90 @@
+.profile-page { display: flex; flex-direction: column; gap: var(--space-6); }
+
+/* Wallet card */
+.profile-wallet-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.profile-avatar {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: var(--green-glow);
+  border: 2px solid var(--border-mid);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--green-bright);
+  box-shadow: var(--shadow-green);
+}
+.profile-wallet-info { display: flex; flex-direction: column; gap: var(--space-1); }
+.profile-address-full {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  word-break: break-all;
+  background: var(--bg-elevated);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+.profile-address-short {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+.profile-wallet-actions { display: flex; gap: var(--space-3); }
+
+/* Balances */
+.balance-list { display: flex; flex-direction: column; gap: var(--space-2); }
+.balance-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--duration);
+}
+.balance-row:hover { border-color: var(--border-mid); }
+.balance-icon { font-size: 1.2rem; flex-shrink: 0; }
+.balance-body { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.balance-label { font-size: 0.8rem; font-weight: 700; color: var(--text-primary); }
+.balance-sub   { font-size: 0.65rem; color: var(--text-muted); }
+.balance-right { display: flex; align-items: center; gap: var(--space-3); }
+.balance-value { font-size: 0.9rem; font-weight: 700; color: var(--text-primary); font-family: var(--font-mono); }
+
+/* Receipts list */
+.profile-receipts-list { display: flex; flex-direction: column; gap: var(--space-2); }
+.profile-receipt-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--duration);
+}
+.profile-receipt-row:hover { border-color: var(--border-mid); }
+.pr-left  { display: flex; flex-direction: column; gap: 2px; }
+.pr-id    { font-size: 0.8rem; font-weight: 700; color: var(--text-primary); }
+.pr-detail{ font-size: 0.65rem; color: var(--text-muted); }
+.pr-right { display: flex; align-items: center; gap: var(--space-3); }
+.pr-value { font-size: 0.8rem; font-weight: 700; color: var(--green-bright); }
+
+/* Network info */
+.network-info-grid { display: flex; flex-direction: column; gap: var(--space-2); }
+.net-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--border);
+}
+.net-row:last-child { border-bottom: none; }
+.net-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.net-value { font-size: 0.75rem; color: var(--text-primary); font-family: var(--font-mono); }
+.net-value.link { color: var(--green-dim); }
+.net-value.link:hover { color: var(--green-bright); }

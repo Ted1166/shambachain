@@ -2,6 +2,9 @@
 @import './cards.css';
 @import './toast.css';
 @import './connect.css';
+@import './require-wallet.css';
+@import './tx-modal.css';
+@import './profile.css';
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 

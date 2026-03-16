@@ -6,6 +6,7 @@ import { Receipts }  from './pages/Receipts';
 import { Vault }     from './pages/Vault';
 import { Markets }   from './pages/Markets';
 import { Explorer }  from './pages/Explorer';
+import { Profile } from './pages/Profile';
 import { ToastProvider } from './components/ui/Toast';
 import { WalletProvider } from './components/WalletContext';
 import './styles/global.css';
@@ -30,6 +31,7 @@ export default function App() {
                 <Route path="/vault"    element={<Vault />}     />
                 <Route path="/markets"  element={<Markets />}   />
                 <Route path="/explorer" element={<Explorer />}  />
+                <Route path="/profile" element={<Profile />}  />
               </Routes>
             </main>
           </div>

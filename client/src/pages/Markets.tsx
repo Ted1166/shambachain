@@ -3,6 +3,8 @@ import { ethers } from 'ethers';
 import { CONTRACTS, RISK_MARKET_ABI, FORWARD_MARKET_ABI, getProvider } from '../config/contracts';
 import { RiskMarketCard, ForwardBidCard } from '../components/cards/MarketCard';
 import { PoolDonut } from '../components/charts/PoolDonut';
+import { useMarketActions } from '../hooks/useMarketActions';
+import { TxModal } from '../components/ui/TxModal';
 import '../styles/markets.css';
 
 export function Markets() {
@@ -10,6 +12,7 @@ export function Markets() {
   const [riskMarket, setRiskMarket] = useState<any>(null);
   const [forwardBid, setForwardBid] = useState<any>(null);
   const [loading, setLoading] = useState(true);
+  const { takePosition, status, txHash, error, reset } = useMarketActions();
 
   useEffect(() => {
     async function fetch() {
@@ -84,8 +87,20 @@ export function Markets() {
       ) : tab === 'forward' ? (
         <ForwardSection bid={forwardBid} />
       ) : (
-        <RiskSection market={riskMarket} />
+        <RiskSection
+         market={riskMarket}
+         onTakePosition={(isYes) => takePosition(riskMarket.marketId, isYes, 1)} 
+         />
       )}
+
+      <TxModal
+        status={status}
+        txHash={txHash}
+        error={error}
+        title="Market Transaction"
+        steps={['Approve USDC-H', 'Confirm Position']}
+        onClose={reset}
+      />
     </div>
   );
 }
@@ -104,7 +119,10 @@ function ForwardSection({ bid }: { bid: any}) {
   );
 }
 
-function RiskSection({ market}: { market: any}) {
+function RiskSection({ market, onTakePosition}: { 
+  market: any;
+  onTakePosition: (isYes: boolean) => void;
+}) {
   if (!market) return <div className="empty-state">No risk markets</div>;
   // const yesPct = market.yesProbPct || 0;
   // const noPct  = 100 - yesPct;
@@ -117,18 +135,13 @@ function RiskSection({ market}: { market: any}) {
           <RiskMarketCard market={market} />
           <div className="card" style={{ display: 'flex', justifyContent: 'center', padding: 'var(--space-8)' }}>
             <PoolDonut yesPool={market.yesPool} noPool={market.noPool} size={160} />
+            <div style={{ display: 'flex', gap: 'var(--space-3)' }}>
+              <button className="btn btn-danger"  onClick={() => onTakePosition(true)}>Take YES</button>
+              <button className="btn btn-primary" onClick={() => onTakePosition(false)}>Take NO</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-// function ForwardRow({ label, value }: { label: string; value: string }) {
-//   return (
-//     <div className="forward-row">
-//       <span className="stat-label">{label}</span>
-//       <span style={{fontSize:'0.8rem', color:'var(--text-primary)'}}>{value}</span>
-//     </div>
-//   );
-// }

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { usePrice } from '../../hooks/usePrice';
+import { useWalletContext } from '../WalletContext';
 import '../../styles/sidebar.css';
 import { ConnectButton } from '../ui/ConnectButton';
 
@@ -13,6 +14,7 @@ const NAV_ITEMS = [
 
 export function Sidebar() {
   const { priceKes, isStale } = usePrice();
+  const { isConnected, shortAddress } = useWalletContext();
 
   return (
     <aside className="sidebar">
@@ -51,6 +53,17 @@ export function Sidebar() {
             <span className="nav-arrow">›</span>
           </NavLink>
         ))}
+        {/* Profile - only when connected */}
+        {isConnected && (
+          <NavLink
+            to="/profile"
+            className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+          >
+            <span className="nav-icon">◐</span>
+            <span className="nav-label">{shortAddress ?? 'Profile'}</span>
+            <span className="nav-arrow">›</span>
+          </NavLink>
+        )}
       </nav>
 
       {/* Network badge */}

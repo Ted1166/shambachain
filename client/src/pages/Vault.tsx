@@ -3,15 +3,19 @@ import { useLoan, LOAN_STATUS, LOAN_STATUS_CLASS } from '../hooks/useLoans';
 import '../styles/vault.css';
 import { LoanCard } from '../components/cards/LoanCard';
 import { LtvGauge } from '../components/charts/LtvGauge';
-import { ReceiptCard } from '../components/cards/ReceiptCard';
+import { useVaultActions } from '../hooks/useVaultActions';
+import { TxModal } from '../components/ui/TxModal';
+import { RequireWallet } from '../components/ui/RequireWallet';
 
 export function Vault() {
+  const { lockAndBorrow, repayLoan, status, txHash, error, reset } = useVaultActions();
   const { receipts } = useReceipts();
   const { loan, loading } = useLoan(1); // loan #1 seeded
 
   const lockedReceipt = receipts.find(r => r.tokenId === loan?.tokenId);
 
   return (
+    <RequireWallet message="Connect your wallet to lock collateral and borrow USDC-H.">
     <div className="vault-page animate-in">
       <div className="page-header">
         <h1 className="page-title">Collateral Vault</h1>
@@ -68,8 +72,10 @@ export function Vault() {
                 {/* Actions */}
                 {loan.status === 1 && (
                   <div className="vault-actions">
-                    <button className="btn btn-primary">Repay Loan</button>
-                    <button className="btn btn-outline">Top Up Collateral</button>
+                    <button className="btn btn-primary" onClick={() => loan && repayLoan(loan.loanId, loan.totalOwed)}>
+                      Repay Loan
+                    </button>
+
                     <a
                       href={`https://hashscan.io/testnet/contract/${loan.loanId}`}
                       target="_blank" rel="noreferrer"
@@ -98,7 +104,26 @@ export function Vault() {
             </div>
             <div className="available-list">
               {receipts.filter(r => r.status === 0).map(r => (
-                <ReceiptCard key={r.tokenId} receipt={r} compact />
+                <div key={r.tokenId} className="available-item">
+                  <div className="available-item-left">
+                    <span className="available-id">oCR #{r.tokenId}</span>
+                    <span className="available-details">
+                      {r.weightKg}kg {r.commodityType} · Grade {['A','B','C'][r.grade]}
+                    </span>
+                  </div>
+                  <div className="available-item-right">
+                    <span className="available-value">
+                      KES {r.valuationKes.toLocaleString('en-KE', {maximumFractionDigits: 0})}
+                    </span>
+                    <button
+                      className="btn btn-outline"
+                      style={{fontSize:'0.65rem', padding:'4px 10px'}}
+                      onClick={() => lockAndBorrow(r.tokenId)}
+                    >
+                      Lock →
+                    </button>
+                  </div>
+                </div>
               ))}
 
               {receipts.filter(r => r.status === 0).length === 0 && (
@@ -125,6 +150,15 @@ export function Vault() {
         </div>
       </div>
     </div>
+    <TxModal
+      status={status}
+      txHash={txHash}
+      error={error}
+      title="Vault Transaction"
+      steps={['Approve NFT', 'Lock Collateral', 'Issue Loan']}
+      onClose={reset}
+    />
+    </RequireWallet>
   );
 }
 

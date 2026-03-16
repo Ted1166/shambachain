@@ -1,0 +1,72 @@
+.require-wallet-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: var(--space-8);
+}
+
+.require-wallet-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-xl);
+  padding: var(--space-12) var(--space-10);
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+  text-align: center;
+  box-shadow: var(--shadow-green);
+  animation: fadeInUp 0.3s var(--ease) both;
+}
+
+.rw-icon {
+  font-size: 3rem;
+  color: var(--green-bright);
+  filter: drop-shadow(0 0 12px var(--green-bright));
+  line-height: 1;
+}
+
+.rw-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.rw-message {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.rw-message strong {
+  color: var(--green-bright);
+}
+
+/* Make ConnectButton full width inside card */
+.require-wallet-card .connect-wrapper,
+.require-wallet-card .wallet-connected {
+  width: 100%;
+}
+
+.rw-supported {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+}
+
+.rw-wallet-tag {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 2px 8px;
+  color: var(--text-secondary);
+  font-size: 0.65rem;
+}
