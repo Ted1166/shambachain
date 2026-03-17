@@ -42,22 +42,14 @@ export function useVaultActions() {
 
       setStatus('confirming');
 
-      // Step 2 — lock collateral (returns loanId via event)
+      // Step 2 — lock collateral
       const lockTx = await vault.lockCollateral(tokenId, { gasLimit: 300_000 });
-      const lockReceipt = await lockTx.wait();
+      await lockTx.wait();
       setTxHash(lockTx.hash);
 
-      // Parse loanId from CollateralLocked event
-      let loanId = 0n;
-      for (const log of lockReceipt?.logs ?? []) {
-        try {
-          const parsed = vault.interface.parseLog({ topics: log.topics as string[], data: log.data });
-          if (parsed?.name === 'CollateralLocked') {
-            loanId = parsed.args.loanId as bigint;
-            break;
-          }
-        } catch { /* not our event */ }
-      }
+      // Get loanId from tokenToLoan mapping (Hedera event parsing unreliable)
+      const loanId = await vault.tokenToLoan(tokenId);
+      if (!loanId || loanId === 0n) throw new Error('Lock failed — no loan ID returned');
 
       // Step 3 — issue loan
       const issueTx = await vault.issueLoan(loanId, ltvBps, { gasLimit: 300_000 });
