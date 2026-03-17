@@ -4,9 +4,6 @@
 
 ShambaChain turns physical grain deposits into on-chain Commodity Receipts (oCR NFTs) on Hedera EVM — giving East African smallholder farmers access to DeFi collateral, forward markets, and institutional liquidity for the first time.
 
-> Built for the **Hello Future Apex Hackathon 2026** · AngelHack + Hashgraph · $250,000 prize pool  
-> Track: DeFi/Tokenization · Bounty: OpenClaw
-
 ---
 
 ## 🏗 Architecture Overview
@@ -51,7 +48,7 @@ Frontend (React + Vite + ethers.js)
 3. Backend receives MPESA callback
 4. Backend writes deposit event to Hedera HCS topic 0.0.8157255
 5. Backend mints oCR NFT on Hedera EVM (ERC-721)
-6. LoanAgent (Claude AI) generates a loan offer explanation
+6. LoanAgent generates a loan offer explanation
 7. Loan offer sent to farmer via Telegram bot
 8. Farmer locks oCR as collateral in vault
 9. Farmer borrows USDC-H at up to 80% LTV
@@ -124,7 +121,7 @@ shambachain/
 - Foundry (`curl -L https://foundry.paradigm.xyz | bash`)
 - A Hedera testnet account (get one at [portal.hedera.com](https://portal.hedera.com))
 - Safaricom Daraja sandbox account (for MPESA)
-- Anthropic API key (for LoanAgent Claude AI)
+- Anthropic API key (for LoanAgent AI)
 - MetaMask or HashPack wallet
 
 ### 1. Clone and Install
@@ -351,12 +348,12 @@ Holding 100+ SHAMBA qualifies for protocol fee discounts.
 Loan value (USDC-H) = (weightKg × KES/kg oracle price) ÷ KES/USD rate × LTV%
 ```
 
-### Lock collateral flow (frontend)
+### Lock collateral flow 
 1. Wallet approves vault to transfer oCR NFT
 2. `lockCollateral(tokenId)` — NFT approved, loan ID created
 3. `issueLoan(loanId, ltvBps)` — USDC-H transferred to farmer wallet
 
-### Repay flow (frontend)
+### Repay flow 
 1. Wallet approves vault to pull USDC-H (principal + interest)
 2. `repayLoan(loanId)` — USDC-H returned, oCR unlocked
 
@@ -405,7 +402,7 @@ Connect GitHub repo to Vercel. Set in dashboard:
 
 Add environment variable:
 ```
-VITE_BACKEND_URL=https://your-railway-backend.up.railway.app
+VITE_BACKEND_URL=https://shambachain-backend-production.up.railway.app
 ```
 
 ---
