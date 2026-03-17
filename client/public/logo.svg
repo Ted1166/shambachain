@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .bg   { fill: #090f09; }
+        .ring1{ stroke: #00ff88; }
+        .ring2{ stroke: #00994f; }
+        .ring3{ fill: #0e180e; stroke: #00ff88; }
+        .stalk{ stroke: #00cc6a; }
+        .grain{ fill: #00ff88; }
+      }
+      @media (prefers-color-scheme: light) {
+        .bg   { fill: #f0faf0; }
+        .ring1{ stroke: #00994f; }
+        .ring2{ stroke: #00cc6a; }
+        .ring3{ fill: #ffffff; stroke: #00994f; }
+        .stalk{ stroke: #00994f; }
+        .grain{ fill: #00994f; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="96" class="bg"/>
+
+  <!-- Outer hex ring -->
+  <polygon
+    points="100,14 172,56 172,140 100,182 28,140 28,56"
+    fill="none" class="ring1" stroke-width="2.5"/>
+
+  <!-- Mid hex ring -->
+  <polygon
+    points="100,30 158,64 158,132 100,166 42,132 42,64"
+    fill="none" class="ring2" stroke-width="1.2"/>
+
+  <!-- Inner hex filled -->
+  <polygon
+    points="100,50 148,78 148,134 100,162 52,134 52,78"
+    class="ring3" stroke-width="1.5"/>
+
+  <!-- Wheat stalk — vertical center -->
+  <line x1="100" y1="148" x2="100" y2="94"
+    class="stalk" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Top kernel -->
+  <ellipse cx="100" cy="92" rx="8" ry="12" class="grain"/>
+
+  <!-- Left kernels -->
+  <ellipse cx="88" cy="106" rx="7" ry="10" class="grain"
+    transform="rotate(-22 88 106)"/>
+  <ellipse cx="82" cy="122" rx="6" ry="9" class="grain"
+    transform="rotate(-28 82 122)"/>
+
+  <!-- Right kernels -->
+  <ellipse cx="112" cy="106" rx="7" ry="10" class="grain"
+    transform="rotate(22 112 106)"/>
+  <ellipse cx="118" cy="122" rx="6" ry="9" class="grain"
+    transform="rotate(28 118 122)"/>
+
+  <!-- Leaf left -->
+  <path d="M100 130 Q80 118 76 104" fill="none"
+    class="stalk" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Leaf right -->
+  <path d="M100 130 Q120 118 124 104" fill="none"
+    class="stalk" stroke-width="2" stroke-linecap="round"/>
+</svg>

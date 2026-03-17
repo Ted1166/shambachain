@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import * as dotenv from "dotenv";
 dotenv.config();
 
@@ -16,6 +17,20 @@ async function main() {
 
   const app = express();
   app.use(express.json());
+  app.use(cors({ origin: "*" }));
+
+  // ── Mirror node proxy (avoids CORS in browser) ─────────────────────────
+  app.get("/api/mirror/receipt-tokens", async (req, res) => {
+    const axios = (await import("axios")).default;
+    const addr = "0x451f2f54a027f9ec359f1411f341878d645dd337";
+    const topic0 = "0x90e6f23b6f72b87ceea2b71263a788fdd9a39a2f51983274ae78d6ac65f3794c";
+    const r = await axios.get(`https://testnet.mirrornode.hedera.com/api/v1/contracts/${addr}/results/logs?limit=100&order=asc`);
+    const ids = (r.data?.logs ?? [])
+      .filter((l: any) => l.topics?.[0] === topic0 && l.topics?.[1])
+      .map((l: any) => parseInt(l.topics[1], 16))
+      .filter((id: number) => id > 0 && id <= 10_000);
+    res.json({ tokenIds: [...new Set(ids)] });
+  });
 
   app.get("/health", (_req, res) => {
     res.json({ status: "ok", service: "shambachain-backend", ts: new Date().toISOString() });

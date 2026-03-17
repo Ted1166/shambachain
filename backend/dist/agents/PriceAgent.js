@@ -47,21 +47,9 @@ const logger_1 = require("../utils/logger");
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 const anthropic = new sdk_1.default({ apiKey: process.env.ANTHROPIC_API_KEY });
-// ── State ─────────────────────────────────────────────────────────────────────
 let lastPriceKes = 0n;
 let lastAlertSentAt = 0;
-const ALERT_COOLDOWN_MS = 30 * 60 * 1000; // 30 min between alerts
-/**
- * PriceAgent — runs every 5 minutes.
- *
- * Responsibilities:
- *   1. Poll SupraPriceFeed for latest maize KES/kg price
- *   2. Detect significant price moves (>= 5% change)
- *   3. Post price update to HCS for audit trail
- *   4. Send Telegram alert to farmers if price drops significantly
- *   5. Earn SHAMBA reward via ShambaToken.rewardPriceUpdate()
- *   6. Use Claude to generate a natural-language market commentary
- */
+const ALERT_COOLDOWN_MS = 30 * 60 * 1000;
 class PriceAgent {
     agentAddress;
     running = false;
@@ -73,9 +61,7 @@ class PriceAgent {
             return;
         this.running = true;
         logger_1.logger.info("PriceAgent started", { wallet: this.agentAddress });
-        // Run every 5 minutes
         node_cron_1.default.schedule("*/5 * * * *", () => this.tick());
-        // Run immediately on start
         this.tick();
     }
     async tick() {
@@ -101,7 +87,6 @@ class PriceAgent {
             logger_1.logger.warn("PriceAgent: oracle price is stale — skipping update");
             return;
         }
-        // ── Detect significant price move ────────────────────────────────────
         const priceMoved = lastPriceKes > 0n && priceChangePct(lastPriceKes, currentPrice) >= 5;
         if (priceMoved || lastPriceKes === 0n) {
             const direction = currentPrice > lastPriceKes ? "↑" : "↓";
@@ -112,16 +97,13 @@ class PriceAgent {
                 old: formatKes(lastPriceKes),
                 new: formatKes(currentPrice),
             });
-            // ── Write to HCS ─────────────────────────────────────────────────
             await (0, writer_1.writeHcsEvent)({
                 type: "VALUATION_UPDATE",
                 version: "1.0",
                 timestamp: new Date().toISOString(),
                 network: (process.env.HEDERA_NETWORK ?? "testnet"),
             });
-            // ── Generate Claude commentary ────────────────────────────────────
             const commentary = await this.generateCommentary(currentPrice, lastPriceKes);
-            // ── Telegram alert ────────────────────────────────────────────────
             const now = Date.now();
             if (now - lastAlertSentAt > ALERT_COOLDOWN_MS && currentPrice < lastPriceKes) {
                 const alertMsg = `🌽 *ShambaChain Price Alert*\n\n` +
@@ -131,10 +113,9 @@ class PriceAgent {
                 await (0, bot_1.sendTelegramMessage)(alertMsg);
                 lastAlertSentAt = now;
             }
-            // ── Earn SHAMBA reward ────────────────────────────────────────────
             try {
                 const shamba = (0, contracts_1.getShambaToken)();
-                await (await shamba.rewardPriceUpdate(this.agentAddress, { gasLimit: 100_000 })).wait();
+                await (await shamba.rewardPriceUpdate(this.agentAddress, { gasLimit: 300_000 })).wait();
                 logger_1.logger.info("PriceAgent: SHAMBA reward claimed");
             }
             catch (rewardErr) {
@@ -143,9 +124,6 @@ class PriceAgent {
         }
         lastPriceKes = currentPrice;
     }
-    /**
-     * Use Claude to generate a 1-sentence Telegram-friendly market commentary.
-     */
     async generateCommentary(current, previous) {
         try {
             const pct = previous > 0n ? priceChangePct(previous, current).toFixed(1) : "0";
@@ -166,7 +144,6 @@ class PriceAgent {
     }
 }
 exports.PriceAgent = PriceAgent;
-// ── Helpers ───────────────────────────────────────────────────────────────────
 function formatKes(wei) {
     return (Number(wei) / 1e18).toFixed(2);
 }

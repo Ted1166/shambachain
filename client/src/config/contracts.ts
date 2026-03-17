@@ -52,7 +52,8 @@ export const RISK_MARKET_ABI = [
   'function takePosition(uint256 marketId, bool isYes, uint256 amount)',
   'function resolveMarket(uint256 marketId)',
   'function claimPayout(uint256 marketId, uint256 positionId)',
-  'function getMarket(uint256 marketId) view returns (tuple(uint256 marketId, uint256 tokenId, uint256 loanId, address creator, uint256 createdAt, uint256 deadline, uint8 status, uint8 outcome, uint256 yesPool, uint256 noPool, uint256 totalPool, uint256 resolvedAt, uint256 finalLtvBps, string resolutionNote, uint256 protocolFeeCollected))',
+  'function getMarketInfo(uint256 marketId) view returns (tuple(uint256 marketId, uint256 tokenId, uint256 loanId, address creator, uint256 createdAt, uint256 deadline, uint8 status, uint8 outcome))',
+  'function getMarketFinancials(uint256 marketId) view returns (tuple(uint256 yesPool, uint256 noPool, uint256 totalPool, uint256 resolvedAt, uint256 finalLtvBps, string resolutionNote, uint256 protocolFeeCollected))',
   'function tokenActiveMarket(uint256 tokenId) view returns (uint256)',
   'function getMarketOdds(uint256 marketId) view returns (uint256 yesPool, uint256 noPool, uint256 impliedYesProbBps)',
 ] as const;
@@ -62,7 +63,7 @@ export const FORWARD_MARKET_ABI = [
   'function acceptBid(uint256 bidId)',
   'function settle(uint256 bidId)',
   'function cancelBid(uint256 bidId)',
-  'function getBid(uint256 bidId) view returns (tuple(uint256 bidId, uint8 bidType, address buyer, uint256 tokenId, string commodityType, uint256 minWeightKg, uint8 minGrade, uint256 offerUsdcH, uint256 settlementDate, string buyerRef, uint8 status))',
+  'function getBid(uint256 bidId) view returns (tuple(uint256 bidId, uint8 bidType, uint8 status, address buyer, string buyerRef, uint256 tokenId, string commodityType, uint256 minWeightKg, uint8 minGrade, uint256 offerUsdcH, uint256 upfrontUsdcH, uint256 escrowedUsdcH, uint256 placedAt, uint256 settlementDate, uint256 acceptedAt, uint256 settledAt, address farmer))',
 ] as const;
 
 export const SHAMBA_TOKEN_ABI = [

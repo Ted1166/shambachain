@@ -47,10 +47,8 @@ const CONSUMER_SECRET = process.env.MPESA_CONSUMER_SECRET ?? "";
 const SHORTCODE = process.env.MPESA_SHORTCODE ?? "";
 const PASSKEY = process.env.MPESA_PASSKEY ?? "";
 const CALLBACK_URL = process.env.MPESA_CALLBACK_URL ?? "";
-const BASE_URL = "https://sandbox.safaricom.co.ke"; // swap to production URL on go-live
-// In-memory store of pending STK pushes (use Redis in production)
+const BASE_URL = "https://sandbox.safaricom.co.ke";
 exports.pendingStkPushes = new Map();
-// ── OAuth token ──────────────────────────────────────────────────────────────
 async function getAccessToken() {
     const credentials = Buffer.from(`${CONSUMER_KEY}:${CONSUMER_SECRET}`).toString("base64");
     const res = await axios_1.default.get(`${BASE_URL}/oauth/v1/generate?grant_type=client_credentials`, {
@@ -58,17 +56,6 @@ async function getAccessToken() {
     });
     return res.data.access_token;
 }
-// ── STK Push ─────────────────────────────────────────────────────────────────
-/**
- * Initiate an MPESA STK Push to collect the farmer's warehouse deposit fee.
- * Returns the CheckoutRequestID to track the transaction.
- *
- * Flow:
- *   1. Farmer approaches warehouse → operator enters phone + kg + commodity
- *   2. This function is called → farmer receives a prompt on their phone
- *   3. Farmer enters PIN → MPESA fires callback to /api/mpesa/callback
- *   4. webhook.ts parses callback → triggers HCS write + NFT mint
- */
 async function initiateStkPush(req) {
     const token = await getAccessToken();
     const timestamp = getTimestamp();
@@ -96,7 +83,6 @@ async function initiateStkPush(req) {
     if (data.ResponseCode !== "0") {
         throw new Error(`STK Push failed: ${data.ResponseDescription}`);
     }
-    // Store pending push
     exports.pendingStkPushes.set(data.CheckoutRequestID, {
         checkoutRequestId: data.CheckoutRequestID,
         merchantRequestId: data.MerchantRequestID,
@@ -114,7 +100,6 @@ async function initiateStkPush(req) {
     });
     return data;
 }
-// ── Helpers ──────────────────────────────────────────────────────────────────
 function getTimestamp() {
     const now = new Date();
     const pad = (n) => n.toString().padStart(2, "0");

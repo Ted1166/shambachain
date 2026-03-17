@@ -59,7 +59,6 @@ exports.CONTRACT_ADDRESSES = {
 };
 exports.provider = new ethers_1.ethers.JsonRpcProvider(hedera_1.EVM_RPC_URL);
 exports.signer = new ethers_1.ethers.Wallet(hedera_1.HEDERA_PRIVATE_KEY, exports.provider);
-// ── ABIs (match actual contract signatures exactly) ───────────────────────────
 exports.RECEIPT_FACTORY_ABI = [
     // mintReceipt(custodian, farmer, commodityType, weightKg, grade, warehouseId, mpesaRef, hcsSequenceNumber, initialValuationKes, metadataURI)
     "function mintReceipt(address custodian, address farmer, string commodityType, uint256 weightKg, uint8 grade, string warehouseId, string mpesaRef, uint256 hcsSequenceNumber, uint256 initialValuationKes, string metadataURI) returns (uint256 tokenId)",
@@ -68,7 +67,6 @@ exports.RECEIPT_FACTORY_ABI = [
     "function getValuation(uint256 tokenId) view returns (uint256)",
     "function updateValuation(uint256 tokenId, uint256 newValuationKes)",
     "function ownerOf(uint256 tokenId) view returns (address)",
-    "function totalSupply() view returns (uint256)",
     "function approve(address to, uint256 tokenId)",
     "function grantRole(bytes32 role, address account)",
     "function MINTER_ROLE() view returns (bytes32)",
@@ -126,9 +124,8 @@ exports.SHAMBA_TOKEN_ABI = [
     "function balanceOf(address account) view returns (uint256)",
     "function qualifiesForDiscount(address account) view returns (bool)",
 ];
-// ── Contract instances ────────────────────────────────────────────────────────
-function getReceiptFactory() {
-    return new ethers_1.ethers.Contract(exports.CONTRACT_ADDRESSES.receiptFactory, exports.RECEIPT_FACTORY_ABI, exports.signer);
+function getReceiptFactory(readonly = false) {
+    return new ethers_1.ethers.Contract(exports.CONTRACT_ADDRESSES.receiptFactory, exports.RECEIPT_FACTORY_ABI, readonly ? exports.provider : exports.signer);
 }
 function getCollateralVault() {
     return new ethers_1.ethers.Contract(exports.CONTRACT_ADDRESSES.collateralVault, exports.COLLATERAL_VAULT_ABI, exports.signer);

@@ -42,7 +42,6 @@ const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 const PROTOCOL_CUSTODIAN = process.env.ADMIN_ADDRESS ?? "";
 async function mpesaCallbackHandler(req, res) {
-    // Always acknowledge immediately — Safaricom retries if no 200 in 5s
     res.status(200).json({ ResultCode: 0, ResultDesc: "Accepted" });
     const body = req.body;
     try {
@@ -80,7 +79,6 @@ async function mpesaCallbackHandler(req, res) {
             phone: phoneNumber,
             warehouse: pending.accountRef,
         });
-        // ── 1. Write to HCS ───────────────────────────────────────────────────
         const hcsResult = await (0, writer_1.writeDepositEvent)({
             mpesaRef: mpesaReceiptNumber,
             phoneNumber,
@@ -92,17 +90,14 @@ async function mpesaCallbackHandler(req, res) {
             topicId: hcsResult.topicId,
             sequenceNumber: hcsResult.sequenceNumber,
         });
-        // ── 2. Estimate weight + valuation ────────────────────────────────────
-        // Heuristic: KES 2.50 deposit fee per kg. 45 KES/kg maize price.
         const estimatedWeightKg = Math.max(1, Math.floor(amount / 2.5));
         const initialValuationKes = (0, receipt_minter_1.estimateValuationKes)(estimatedWeightKg, 45);
-        // ── 3. Mint oCR NFT ───────────────────────────────────────────────────
         const tokenId = await (0, receipt_minter_1.mintReceipt)({
             custodian: PROTOCOL_CUSTODIAN,
-            farmer: phoneNumber, // custodial wallet mapped from phone in production
+            farmer: PROTOCOL_CUSTODIAN,
             commodityType: "MAIZE",
             weightKg: estimatedWeightKg,
-            grade: 0, // Grade.A default — updated by GRADER_ROLE
+            grade: 0,
             warehouseId: pending.accountRef,
             mpesaRef: mpesaReceiptNumber,
             hcsSequenceNumber: BigInt(hcsResult.sequenceNumber),
@@ -115,6 +110,9 @@ async function mpesaCallbackHandler(req, res) {
             weightKg: estimatedWeightKg,
             hcsSequence: hcsResult.sequenceNumber,
         });
+        const { LoanAgent } = await Promise.resolve().then(() => __importStar(require("../agents/LoanAgent")));
+        const loanAgent = new LoanAgent();
+        await loanAgent.proposeLoan(tokenId).catch(err => logger_1.logger.warn("LoanAgent proposal failed", { err }));
     }
     catch (err) {
         logger_1.logger.error("Error processing MPESA callback", { err });

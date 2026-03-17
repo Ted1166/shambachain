@@ -37,6 +37,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const cors_1 = __importDefault(require("cors"));
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 const webhook_1 = require("./mpesa/webhook");
@@ -47,16 +48,25 @@ const logger_1 = require("./utils/logger");
 const PORT = Number(process.env.PORT ?? 3000);
 async function main() {
     logger_1.logger.info("ShambaChain Backend starting...");
-    // ── Express server ───────────────────────────────────────────────────────
     const app = (0, express_1.default)();
     app.use(express_1.default.json());
-    // Health check
+    app.use((0, cors_1.default)({ origin: "*" }));
+    // ── Mirror node proxy (avoids CORS in browser) ─────────────────────────
+    app.get("/api/mirror/receipt-tokens", async (req, res) => {
+        const axios = (await Promise.resolve().then(() => __importStar(require("axios")))).default;
+        const addr = "0x451f2f54a027f9ec359f1411f341878d645dd337";
+        const topic0 = "0x90e6f23b6f72b87ceea2b71263a788fdd9a39a2f51983274ae78d6ac65f3794c";
+        const r = await axios.get(`https://testnet.mirrornode.hedera.com/api/v1/contracts/${addr}/results/logs?limit=100&order=asc`);
+        const ids = (r.data?.logs ?? [])
+            .filter((l) => l.topics?.[0] === topic0 && l.topics?.[1])
+            .map((l) => parseInt(l.topics[1], 16))
+            .filter((id) => id > 0 && id <= 10_000);
+        res.json({ tokenIds: [...new Set(ids)] });
+    });
     app.get("/health", (_req, res) => {
         res.json({ status: "ok", service: "shambachain-backend", ts: new Date().toISOString() });
     });
-    // MPESA STK Push callback
     app.post("/api/mpesa/callback", webhook_1.mpesaCallbackHandler);
-    // STK Push initiation endpoint (called by warehouse operator UI)
     app.post("/api/mpesa/stk-push", async (req, res) => {
         const { initiateStkPush } = await Promise.resolve().then(() => __importStar(require("./mpesa/stk-push")));
         try {
@@ -71,7 +81,6 @@ async function main() {
     app.listen(PORT, () => {
         logger_1.logger.info(`HTTP server listening on port ${PORT}`);
     });
-    // ── Telegram bot ─────────────────────────────────────────────────────────
     const _tgToken = process.env.TELEGRAM_BOT_TOKEN ?? "";
     if (_tgToken && _tgToken.length > 10 && !_tgToken.startsWith("your")) {
         try {
@@ -85,7 +94,6 @@ async function main() {
     else {
         logger_1.logger.info("Telegram bot skipped (token not configured)");
     }
-    // ── Sentinel agents ──────────────────────────────────────────────────────
     const priceAgent = new PriceAgent_1.PriceAgent();
     const riskAgent = new RiskAgent_1.RiskAgent();
     priceAgent.start();

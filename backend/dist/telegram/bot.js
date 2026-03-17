@@ -47,12 +47,7 @@ dotenv.config();
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN ?? "";
 let bot = null;
 let loanAgent = null;
-// Default admin chat ID for broadcast alerts
 const ADMIN_CHAT_ID = process.env.TELEGRAM_ADMIN_CHAT_ID ?? "";
-/**
- * Initialise the Telegram bot.
- * Supports both polling (dev) and webhook (production) modes.
- */
 function initTelegramBot() {
     if (!BOT_TOKEN || BOT_TOKEN === "your-token-here") {
         throw new Error("TELEGRAM_BOT_TOKEN not set");
@@ -63,10 +58,6 @@ function initTelegramBot() {
     logger_1.logger.info("Telegram bot started (polling mode)");
     return bot;
 }
-/**
- * Send a message to a specific chat or the default admin chat.
- * Used by PriceAgent and RiskAgent for alerts.
- */
 async function sendTelegramMessage(text, chatId = ADMIN_CHAT_ID) {
     if (!bot || !chatId) {
         logger_1.logger.warn("Telegram bot not initialised or no chatId — skipping message");
@@ -79,9 +70,7 @@ async function sendTelegramMessage(text, chatId = ADMIN_CHAT_ID) {
         logger_1.logger.error("Failed to send Telegram message", { err, chatId });
     }
 }
-// ── Command handlers ──────────────────────────────────────────────────────────
 function registerHandlers(bot) {
-    // /start — welcome message
     bot.onText(/\/start/, async (msg) => {
         const chatId = String(msg.chat.id);
         await bot.sendMessage(chatId, `🌽 *Welcome to ShambaChain*\n\n` +
@@ -93,7 +82,6 @@ function registerHandlers(bot) {
             `/status <tokenId> — check your loan status\n` +
             `/help — show this menu`, { parse_mode: "Markdown" });
     });
-    // /price — fetch current maize price from oracle
     bot.onText(/\/price/, async (msg) => {
         const chatId = String(msg.chat.id);
         try {
@@ -112,7 +100,6 @@ function registerHandlers(bot) {
             logger_1.logger.error("Telegram /price error", { err });
         }
     });
-    // /loan <tokenId> — propose a loan
     bot.onText(/\/loan (\d+)/, async (msg, match) => {
         const chatId = String(msg.chat.id);
         const tokenId = BigInt(match[1]);
@@ -131,13 +118,11 @@ function registerHandlers(bot) {
             logger_1.logger.error("Telegram /loan error", { tokenId: tokenId.toString(), err });
         }
     });
-    // /accept <tokenId> — execute loan
     bot.onText(/\/accept (\d+)/, async (msg, match) => {
         const chatId = String(msg.chat.id);
         const tokenId = BigInt(match[1]);
         await bot.sendMessage(chatId, `⏳ Processing loan for oCR #${tokenId}...`);
         try {
-            // In production: farmerAddress comes from wallet link / custodial mapping
             const farmerAddress = process.env.ADMIN_ADDRESS ?? "";
             const loanId = await loanAgent.executeLoan(tokenId, farmerAddress);
             await bot.sendMessage(chatId, `✅ *Loan Issued!*\n\n` +
@@ -151,7 +136,6 @@ function registerHandlers(bot) {
             logger_1.logger.error("Telegram /accept error", { tokenId: tokenId.toString(), err });
         }
     });
-    // /status <tokenId> — check loan health
     bot.onText(/\/status (\d+)/, async (msg, match) => {
         const chatId = String(msg.chat.id);
         const tokenId = BigInt(match[1]);
@@ -183,7 +167,6 @@ function registerHandlers(bot) {
             logger_1.logger.error("Telegram /status error", { err });
         }
     });
-    // /help — show commands
     bot.onText(/\/help/, async (msg) => {
         const chatId = String(msg.chat.id);
         await bot.sendMessage(chatId, `*ShambaChain Commands*\n\n` +

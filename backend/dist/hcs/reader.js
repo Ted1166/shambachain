@@ -46,13 +46,6 @@ const logger_1 = require("../utils/logger");
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 const HCS_TOPIC_ID = process.env.HCS_DEPOSIT_TOPIC_ID ?? "";
-/**
- * Fetch HCS messages from the Hedera Mirror Node REST API.
- * Used by the backend to verify deposit events and by the dashboard.
- *
- * Mirror node endpoint:
- *   GET /api/v1/topics/{topicId}/messages?limit=25&order=desc
- */
 async function getTopicMessages(topicId = HCS_TOPIC_ID, limit = 25, order = "desc") {
     const url = `${hedera_1.MIRROR_NODE_URL}/api/v1/topics/${topicId}/messages`;
     const res = await axios_1.default.get(url, {
@@ -66,9 +59,6 @@ async function getTopicMessages(topicId = HCS_TOPIC_ID, limit = 25, order = "des
         runningHash: m.running_hash,
     }));
 }
-/**
- * Fetch a single HCS message by sequence number.
- */
 async function getMessageBySequence(sequenceNumber, topicId = HCS_TOPIC_ID) {
     try {
         const url = `${hedera_1.MIRROR_NODE_URL}/api/v1/topics/${topicId}/messages/${sequenceNumber}`;
@@ -86,9 +76,6 @@ async function getMessageBySequence(sequenceNumber, topicId = HCS_TOPIC_ID) {
         return null;
     }
 }
-/**
- * Fetch and parse all DEPOSIT events from the HCS topic.
- */
 async function getDepositEvents(limit = 50) {
     const messages = await getTopicMessages(HCS_TOPIC_ID, limit, "desc");
     const events = [];
@@ -100,20 +87,14 @@ async function getDepositEvents(limit = 50) {
             }
         }
         catch {
-            // skip malformed messages
         }
     }
     return events;
 }
-/**
- * Verify that a given MPESA ref exists in the HCS audit trail.
- * Called by the minter before calling mintReceipt() as an extra guard.
- */
 async function verifyMpesaRefOnHcs(mpesaRef) {
     const events = await getDepositEvents(100);
     return events.some((e) => e.mpesaRef === mpesaRef);
 }
-// ── Helpers ──────────────────────────────────────────────────────────────────
 function decodeBase64(b64) {
     try {
         return Buffer.from(b64, "base64").toString("utf-8");

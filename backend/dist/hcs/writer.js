@@ -41,18 +41,6 @@ const logger_1 = require("../utils/logger");
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 const HCS_TOPIC_ID = process.env.HCS_DEPOSIT_TOPIC_ID ?? "";
-/**
- * Write a MPESA deposit confirmation event to the ShambaChain HCS topic.
- *
- * Each message is a JSON-encoded ShambaHcsEvent. The returned sequence number
- * is stored on-chain in the oCR NFT as an immutable audit trail reference.
- *
- * HCS properties that make this audit-proof:
- *   - Consensus timestamp is set by the Hedera network (not the submitter)
- *   - Sequence numbers are monotonically increasing
- *   - Content is immutable once submitted
- *   - Anyone can verify via mirror node: https://testnet.mirrornode.hedera.com/api/v1/topics/{topicId}/messages
- */
 async function writeDepositEvent(payload) {
     if (!HCS_TOPIC_ID) {
         throw new Error("HCS_DEPOSIT_TOPIC_ID not set in environment");
@@ -74,7 +62,6 @@ async function writeDepositEvent(payload) {
         .setMessage(message)
         .execute(hedera_1.hederaClient);
     const receipt = await tx.getReceipt(hedera_1.hederaClient);
-    // receipt.topicSequenceNumber is a Long — convert to number
     const sequenceNumber = receipt.topicSequenceNumber?.toNumber() ?? 0;
     const result = {
         topicId: HCS_TOPIC_ID,
@@ -90,10 +77,6 @@ async function writeDepositEvent(payload) {
     });
     return result;
 }
-/**
- * Write a generic ShambaChain event to HCS.
- * Used by RiskAgent to log valuation updates, liquidations, etc.
- */
 async function writeHcsEvent(event) {
     if (!HCS_TOPIC_ID) {
         throw new Error("HCS_DEPOSIT_TOPIC_ID not set in environment");

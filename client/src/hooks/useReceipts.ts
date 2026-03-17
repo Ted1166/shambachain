@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { ethers } from 'ethers';
-import { CONTRACTS, RECEIPT_FACTORY_ABI, MIRROR_NODE, getProvider } from '../config/contracts';
+import { CONTRACTS, RECEIPT_FACTORY_ABI, getProvider } from '../config/contracts';
 
 export interface Receipt {
   tokenId: number;
@@ -29,18 +29,9 @@ export function useReceipts(refreshMs = 60_000) {
 
   async function fetchTokenIds(): Promise<number[]> {
     try {
-      const addr = CONTRACTS.receiptFactory.toLowerCase();
-      const topic0 = '0x90e6f23b6f72b87ceea2b71263a788fdd9a39a2f51983274ae78d6ac65f3794c';
-      const res = await axios.get(`${MIRROR_NODE}/api/v1/contracts/${addr}/results/logs?limit=100&order=asc`);
-      const logs: any[] = res.data?.logs ?? [];
-      const ids = new Set<number>();
-      for (const log of logs) {
-        if (log.topics?.[0] === topic0 && log.topics?.[1]) {
-          const id = parseInt(log.topics[1], 16);
-          if (id > 0 && id <= 10_000) ids.add(id);
-        }
-      }
-      return Array.from(ids);
+      const BACKEND = import.meta.env.VITE_BACKEND_URL ?? 'http://localhost:3000';
+      const res = await axios.get(`${BACKEND}/api/mirror/receipt-tokens`);
+      return res.data?.tokenIds ?? [];
     } catch {
       return [1, 2, 3, 4, 5, 6]; // fallback
     }

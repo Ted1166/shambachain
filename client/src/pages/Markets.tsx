@@ -22,27 +22,40 @@ export function Markets() {
         const risk = new ethers.Contract(CONTRACTS.riskMarket, RISK_MARKET_ABI, provider);
         const fwd  = new ethers.Contract(CONTRACTS.forwardMarket, FORWARD_MARKET_ABI, provider);
 
-        const [rm, odds] = await Promise.all([
-        risk.getMarket(1).catch(() => null),
-        risk.getMarketOdds(1).catch(() => null),
-      ]);
-      const fb = await fwd.getBid(1).catch(() => null);
+        // Low-level calls — Hedera tuple decode workaround
+        const riskIface = risk.interface;
+        const fwdIface  = fwd.interface;
 
-      if (rm && odds) {
+        const [rmRaw, rmFinRaw, fbRaw] = await Promise.all([
+          provider.call({ to: CONTRACTS.riskMarket,    data: riskIface.encodeFunctionData('getMarketInfo', [1]) }),
+          provider.call({ to: CONTRACTS.riskMarket,    data: riskIface.encodeFunctionData('getMarketFinancials', [1]) }),
+          provider.call({ to: CONTRACTS.forwardMarket, data: fwdIface.encodeFunctionData('getBid', [1]) }),
+        ]);
+
+        const rm    = riskIface.decodeFunctionResult('getMarketInfo', rmRaw)[0];
+        const rmFin = riskIface.decodeFunctionResult('getMarketFinancials', rmFinRaw)[0];
+        const fb    = fwdIface.decodeFunctionResult('getBid', fbRaw)[0];
+
+        // getMarketOdds reverts when pools are empty — default to 50/50
+        let yesProbPct = 50;
+        try {
+          const oddsRaw = await provider.call({ to: CONTRACTS.riskMarket, data: riskIface.encodeFunctionData('getMarketOdds', [1]) });
+          const odds = riskIface.decodeFunctionResult('getMarketOdds', oddsRaw);
+          yesProbPct = Number(odds.impliedYesProbBps) / 100;
+        } catch { /* empty pools — use 50/50 default */ }
+
         setRiskMarket({
           marketId:   Number(rm.marketId),
           tokenId:    Number(rm.tokenId),
           loanId:     Number(rm.loanId),
           deadline:   new Date(Number(rm.deadline) * 1000),
           status:     Number(rm.status),
-          yesPool:    Number(rm.yesPool) / 1e6,
-          noPool:     Number(rm.noPool) / 1e6,
-          totalPool:  Number(rm.totalPool) / 1e6,
-          yesProbPct: Number(odds.impliedYesProbBps) / 100,
+          yesPool:    Number(rmFin.yesPool) / 1e6,
+          noPool:     Number(rmFin.noPool) / 1e6,
+          totalPool:  Number(rmFin.totalPool) / 1e6,
+          yesProbPct,
         });
-      }
 
-      if (fb) {
         setForwardBid({
           bidId:          Number(fb.bidId),
           buyer:          fb.buyer,
@@ -53,7 +66,6 @@ export function Markets() {
           buyerRef:       fb.buyerRef,
           status:         Number(fb.status),
         });
-      }
       } catch (e) {
         console.error(e);
       } finally {
@@ -106,7 +118,7 @@ export function Markets() {
 }
 
 function ForwardSection({ bid }: { bid: any}) {
-  // if (!bid) return <div className="empty-state">No forward bids</div>;
+  if (!bid) return <div className="empty-state">No forward bids</div>;
   // const daysLeft = Math.max(0, Math.floor((bid.settlementDate - Date.now()) / 86_400_000));
 
   return (

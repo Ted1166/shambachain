@@ -16,7 +16,6 @@ async function mintReceipt(params) {
     });
     const tx = await factory.mintReceipt(params.custodian, params.farmer, params.commodityType, params.weightKg, params.grade, params.warehouseId, params.mpesaRef, params.hcsSequenceNumber, params.initialValuationKes, params.metadataURI, { gasLimit: 500_000 });
     const receipt = await tx.wait();
-    // Parse ReceiptMinted event to get tokenId
     const iface = factory.interface;
     let tokenId = 0n;
     for (const log of receipt?.logs ?? []) {

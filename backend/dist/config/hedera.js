@@ -38,7 +38,6 @@ exports.buildHederaClient = buildHederaClient;
 const sdk_1 = require("@hashgraph/sdk");
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
-// ── Validate required env ────────────────────────────────────────────────────
 function requireEnv(key) {
     const val = process.env[key];
     if (!val)
@@ -50,11 +49,9 @@ exports.HEDERA_PRIVATE_KEY = requireEnv("HEDERA_PRIVATE_KEY");
 exports.HEDERA_NETWORK = (process.env.HEDERA_NETWORK ?? "testnet");
 exports.HEDERA_TESTNET_RPC = process.env.HEDERA_TESTNET_RPC ?? "https://testnet.hashio.io/api";
 exports.HEDERA_MAINNET_RPC = process.env.HEDERA_MAINNET_RPC ?? "https://mainnet.hashio.io/api";
-// ── Mirror node base URLs ────────────────────────────────────────────────────
 exports.MIRROR_NODE_URL = exports.HEDERA_NETWORK === "mainnet"
     ? "https://mainnet-public.mirrornode.hedera.com"
     : "https://testnet.mirrornode.hedera.com";
-// ── Build Hedera SDK client ──────────────────────────────────────────────────
 function buildHederaClient() {
     const accountId = sdk_1.AccountId.fromString(exports.HEDERA_ACCOUNT_ID);
     const privateKey = sdk_1.PrivateKey.fromStringECDSA(exports.HEDERA_PRIVATE_KEY);
@@ -62,12 +59,9 @@ function buildHederaClient() {
         ? sdk_1.Client.forMainnet()
         : sdk_1.Client.forTestnet();
     client.setOperator(accountId, privateKey);
-    // Increase timeout for slower RPC
     client.setRequestTimeout(30_000);
     return client;
 }
-// Singleton client for reuse across modules
 exports.hederaClient = buildHederaClient();
-// ── EVM JSON-RPC URL (for ethers.js contract calls) ──────────────────────────
 exports.EVM_RPC_URL = exports.HEDERA_NETWORK === "mainnet" ? exports.HEDERA_MAINNET_RPC : exports.HEDERA_TESTNET_RPC;
 //# sourceMappingURL=hedera.js.map
