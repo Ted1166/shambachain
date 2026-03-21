@@ -49,9 +49,7 @@ export const SUPRA_PRICE_FEED_ABI = [
 
 export const RISK_MARKET_ABI = [
   'function createMarket(uint256 tokenId, uint256 loanId, uint256 duration) returns (uint256)',
-  'function takePosition(uint256 marketId, bool isYes, uint256 amount)',
-  'function resolveMarket(uint256 marketId)',
-  'function claimPayout(uint256 marketId, uint256 positionId)',
+  'function takePosition(uint256 marketId, bool isYes, uint256 stakeAmt) returns (uint256)',  'function claimPayout(uint256 marketId, uint256 positionId)',
   'function getMarketInfo(uint256 marketId) view returns (tuple(uint256 marketId, uint256 tokenId, uint256 loanId, address creator, uint256 createdAt, uint256 deadline, uint8 status, uint8 outcome))',
   'function getMarketFinancials(uint256 marketId) view returns (tuple(uint256 yesPool, uint256 noPool, uint256 totalPool, uint256 resolvedAt, uint256 finalLtvBps, string resolutionNote, uint256 protocolFeeCollected))',
   'function tokenActiveMarket(uint256 tokenId) view returns (uint256)',

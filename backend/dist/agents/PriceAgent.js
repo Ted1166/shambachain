@@ -84,10 +84,10 @@ class PriceAgent {
             stale: isStale,
         });
         if (isStale) {
-            logger_1.logger.warn("PriceAgent: oracle price is stale — skipping update");
-            return;
+            logger_1.logger.warn("PriceAgent: oracle price is stale — forcing update");
         }
-        const priceMoved = lastPriceKes > 0n && priceChangePct(lastPriceKes, currentPrice) >= 5;
+        // Always update oracle to prevent staleness (threshold is 1 hour)
+        const priceMoved = true;
         if (priceMoved || lastPriceKes === 0n) {
             const direction = currentPrice > lastPriceKes ? "↑" : "↓";
             const changePct = lastPriceKes > 0n
@@ -103,6 +103,17 @@ class PriceAgent {
                 timestamp: new Date().toISOString(),
                 network: (process.env.HEDERA_NETWORK ?? "testnet"),
             });
+            // ── Push price on-chain to keep oracle fresh ────────────────────────
+            try {
+                const { ethers } = await Promise.resolve().then(() => __importStar(require('ethers')));
+                const { signer, CONTRACT_ADDRESSES, SUPRA_PRICE_FEED_ABI } = await Promise.resolve().then(() => __importStar(require('../config/contracts')));
+                const writeFeed = new ethers.Contract(CONTRACT_ADDRESSES.supraPriceFeed, SUPRA_PRICE_FEED_ABI, signer);
+                await (await writeFeed.setManualPrice(currentPrice, { gasLimit: 200_000 })).wait();
+                logger_1.logger.info("PriceAgent: oracle price updated on-chain", { priceKes: formatKes(currentPrice) });
+            }
+            catch (oracleErr) {
+                logger_1.logger.warn("PriceAgent: oracle update failed", { oracleErr });
+            }
             const commentary = await this.generateCommentary(currentPrice, lastPriceKes);
             const now = Date.now();
             if (now - lastAlertSentAt > ALERT_COOLDOWN_MS && currentPrice < lastPriceKes) {

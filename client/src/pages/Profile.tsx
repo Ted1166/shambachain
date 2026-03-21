@@ -36,10 +36,9 @@ function ProfileContent() {
   const [faucetError, setFaucetError] = useState<string|null>(null);
 
   // Filter receipts owned by this wallet
-  const myReceipts = receipts.filter(r =>
-    r.custodian.toLowerCase() === address?.toLowerCase() ||
-    r.farmer.toLowerCase()    === address?.toLowerCase()
-  );
+  // Show all receipts — ownerOf changes on transfer but custodian/farmer are immutable
+  // TODO: filter by ownerOf in production via mirror node
+  const myReceipts = receipts;
 
   useEffect(() => {
     if (!address) return;

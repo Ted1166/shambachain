@@ -5,6 +5,7 @@
 @import './require-wallet.css';
 @import './tx-modal.css';
 @import './profile.css';
+@import './market-forms.css';
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 

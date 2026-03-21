@@ -5,6 +5,8 @@ import { RiskMarketCard, ForwardBidCard } from '../components/cards/MarketCard';
 import { PoolDonut } from '../components/charts/PoolDonut';
 import { useMarketActions } from '../hooks/useMarketActions';
 import { TxModal } from '../components/ui/TxModal';
+import { CreateRiskMarketModal, PlaceForwardBidModal } from '../components/ui/MarketForms';
+import '../styles/market-forms.css';
 import '../styles/markets.css';
 
 export function Markets() {
@@ -13,6 +15,8 @@ export function Markets() {
   const [forwardBid, setForwardBid] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const { takePosition, status, txHash, error, reset } = useMarketActions();
+  const [showCreateMarket, setShowCreateMarket] = useState(false);
+  const [showPlaceBid, setShowPlaceBid] = useState(false);
 
   useEffect(() => {
     async function fetch() {
@@ -27,8 +31,8 @@ export function Markets() {
         const fwdIface  = fwd.interface;
 
         const [rmRaw, rmFinRaw, fbRaw] = await Promise.all([
-          provider.call({ to: CONTRACTS.riskMarket,    data: riskIface.encodeFunctionData('getMarketInfo', [1]) }),
-          provider.call({ to: CONTRACTS.riskMarket,    data: riskIface.encodeFunctionData('getMarketFinancials', [1]) }),
+          provider.call({ to: CONTRACTS.riskMarket,    data: riskIface.encodeFunctionData('getMarketInfo', [2]) }),
+          provider.call({ to: CONTRACTS.riskMarket,    data: riskIface.encodeFunctionData('getMarketFinancials', [2]) }),
           provider.call({ to: CONTRACTS.forwardMarket, data: fwdIface.encodeFunctionData('getBid', [1]) }),
         ]);
 
@@ -39,7 +43,7 @@ export function Markets() {
         // getMarketOdds reverts when pools are empty — default to 50/50
         let yesProbPct = 50;
         try {
-          const oddsRaw = await provider.call({ to: CONTRACTS.riskMarket, data: riskIface.encodeFunctionData('getMarketOdds', [1]) });
+          const oddsRaw = await provider.call({ to: CONTRACTS.riskMarket, data: riskIface.encodeFunctionData('getMarketOdds', [2]) });
           const odds = riskIface.decodeFunctionResult('getMarketOdds', oddsRaw);
           yesProbPct = Number(odds.impliedYesProbBps) / 100;
         } catch { /* empty pools — use 50/50 default */ }
@@ -92,6 +96,10 @@ export function Markets() {
         <button className={`filter-tab ${tab==='risk'?'active':''}`} onClick={()=>setTab('risk')}>
           Risk Market
         </button>
+        <button className="btn btn-outline" style={{marginLeft:'auto', fontSize:'0.7rem'}}
+        onClick={() => setShowPlaceBid(true)}>+ Place Bid</button>
+        <button className="btn btn-outline" style={{fontSize:'0.7rem'}}
+        onClick={() => setShowCreateMarket(true)}>+ Risk Market</button>
       </div>
 
       {loading ? (
@@ -101,7 +109,7 @@ export function Markets() {
       ) : (
         <RiskSection
          market={riskMarket}
-         onTakePosition={(isYes) => takePosition(riskMarket.marketId, isYes, 1)} 
+         onTakePosition={(isYes) => takePosition(1 , isYes, 10)} 
          />
       )}
 
@@ -110,9 +118,22 @@ export function Markets() {
         txHash={txHash}
         error={error}
         title="Market Transaction"
-        steps={['Approve USDC-H', 'Confirm Position']}
+        steps={['Submit Position']}
         onClose={reset}
       />
+
+      {showCreateMarket && (
+        <CreateRiskMarketModal
+          onClose={() => setShowCreateMarket(false)}
+          onCreated={(id) => { setShowCreateMarket(false); alert(`Market #${id} created!`); }}
+        />
+      )}
+      {showPlaceBid && (
+        <PlaceForwardBidModal
+          onClose={() => setShowPlaceBid(false)}
+          onPlaced={(id) => { setShowPlaceBid(false); alert(`Bid #${id} placed!`); }}
+        />
+      )}
     </div>
   );
 }

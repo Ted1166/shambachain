@@ -104,6 +104,8 @@ exports.RISK_ORACLE_ABI = [
 exports.RISK_MARKET_ABI = [
     "function createMarket(uint256 tokenId, uint256 loanId, uint256 duration) returns (uint256 marketId)",
     "function resolveMarket(uint256 marketId)",
+    "function takePosition(uint256 marketId, bool isYes, uint256 amount)",
+    "function claimPayout(uint256 marketId, uint256 positionId)",
     "function getMarket(uint256 marketId) view returns (tuple(uint256 marketId, uint256 tokenId, uint256 loanId, address creator, uint256 createdAt, uint256 deadline, uint8 status, uint8 outcome, uint256 yesPool, uint256 noPool, uint256 totalPool, uint256 resolvedAt, uint256 finalLtvBps, string resolutionNote, uint256 protocolFeeCollected))",
     "function tokenActiveMarket(uint256 tokenId) view returns (uint256 marketId)",
     "function getMarketOdds(uint256 marketId) view returns (uint256 yesPool, uint256 noPool, uint256 impliedYesProbBps)",

@@ -76,6 +76,7 @@ export function Sidebar() {
         <div className="footer-links">
           <a href="https://hashscan.io/testnet" target="_blank" rel="noreferrer">HashScan ↗</a>
           <a href="https://t.me/guarddog_agent_bot" target="_blank" rel="noreferrer">Bot ↗</a>
+          <a href="/landing">About</a>
         </div>
       </div>
     </aside>

@@ -1,5 +1,6 @@
 import { useReceipts } from '../hooks/useReceipts';
 import { useLoan, LOAN_STATUS, LOAN_STATUS_CLASS } from '../hooks/useLoans';
+import { useWalletContext } from '../components/WalletContext';
 import '../styles/vault.css';
 import { LoanCard } from '../components/cards/LoanCard';
 import { LtvGauge } from '../components/charts/LtvGauge';
@@ -9,8 +10,9 @@ import { RequireWallet } from '../components/ui/RequireWallet';
 
 export function Vault() {
   const { lockAndBorrow, repayLoan, status, txHash, error, reset } = useVaultActions();
+  const { address } = useWalletContext();
   const { receipts } = useReceipts();
-  const { loan, loading } = useLoan(1); // loan #1 seeded
+    const { loan, loading } = useLoan(1); // loan #1 seeded
 
   const lockedReceipt = receipts.find(r => r.tokenId === loan?.tokenId);
 
@@ -70,7 +72,7 @@ export function Vault() {
                 )}
 
                 {/* Actions */}
-                {loan.status === 1 && (
+                {loan.status === 1 && loan.borrower.toLowerCase() === address?.toLowerCase() && (
                   <div className="vault-actions">
                     <button className="btn btn-primary" onClick={() => loan && repayLoan(loan.loanId, loan.totalOwed)}>
                       Repay Loan
@@ -155,7 +157,7 @@ export function Vault() {
       txHash={txHash}
       error={error}
       title="Vault Transaction"
-      steps={['Approve NFT', 'Lock Collateral', 'Issue Loan']}
+      steps={['Approve NFT']}
       onClose={reset}
     />
     </RequireWallet>
